@@ -754,7 +754,7 @@ margin-top: 30px;
 }
 @media (max-width: 1350px){
     .all-companies {
-        max-width: 400px;
+        max-width: 380px;
     }
     .btn-link {
         max-width: 320px;
@@ -1282,7 +1282,7 @@ margin-top: 66px;
 }
 @media (max-width: 1320px){
     .fixid {
-        right: 0px !important;
+        right: 45px !important;
     }
 }
 .fixid::-webkit-scrollbar {
