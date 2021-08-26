@@ -1302,11 +1302,17 @@ margin-top: 66px;
 }
 @media (max-width: 1320px){
     .fixid {
-        right: 0px !important;
+        right: 60px !important;
     }
     .all-companies {
         max-width: 400px;
     }
+}
+@media (max-width: 1130px){
+    .fixid {
+        right: 20px !important;
+    }
+ 
 }
 @media (max-width: 1200px){
     .all-companies {
