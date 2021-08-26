@@ -32,7 +32,7 @@ if($(window).innerWidth() >= 1100) {
         if(window.pageYOffset >= 800 && window.pageYOffset<=2410){
           $('.map-settings').addClass('fixid')
           $('.main-container').css("justify-content", "start");
-          $('.main-container').css("margin-left", "85px");
+          $('.main-container').css("margin-left", "70px");
     
         }
         else{

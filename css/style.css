@@ -761,9 +761,7 @@ margin-top: 30px;
 
 }
 @media (max-width: 1350px){
-    .all-companies {
-        max-width: 400px ;
-    }
+  
     .btn-link {
         max-width: 320px;
         padding-top: 25px;
@@ -826,9 +824,7 @@ margin-top: 30px;
         margin-right: 10px;
         width: 24px;
     }
-    .all-companies {
-        max-width: 350px;
-    }
+
     .menu-serv li a {
         font-size: 14px;
     }
