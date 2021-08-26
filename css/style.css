@@ -749,7 +749,10 @@ margin-top: 30px;
 }
 @media (max-width: 1460px){
     .all-companies{
-        max-width: 480px ;
+        max-width: 420px ;
+    }
+    .cm-img{
+        height: 95px;
     }
 .btn-link{
     max-width: 375px;
