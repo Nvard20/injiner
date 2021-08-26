@@ -400,7 +400,7 @@ z-index: 22222;
     color: #0e2337;
     font-weight: bold;
     font-family: "Segoe UI";
-    border-bottom: 0.5px solid #2a3a59;
+    border-bottom: 1px solid #2a3a59;
     padding: 14px 18px;
     margin-top: 3px;
 
@@ -439,6 +439,7 @@ position: relative;
     border-bottom: unset !important;
     padding: 10px 0 !important;
     margin-top: 5px;
+    align-items: center;
 
 }
 .qs{
@@ -481,7 +482,7 @@ margin-bottom: 25px;
 
 }
 .btn-link > a:hover{
-background-color:#2a3a59;
+background-color:#fa5466;
 }
 .btn-link a > img{
     margin-left: 20px;
@@ -1238,7 +1239,7 @@ margin-top: 66px;
 .fixid{
     position: fixed;
     top: 115px;
-    right: 140px;
+    right: 185px;
     overflow-y: scroll;
     height: 80vh;
     overflow-x: hidden;
@@ -1274,9 +1275,15 @@ margin-top: 66px;
 
     }
 }
-@media (max-width: 1500px){
+@media (max-width: 1450px){
     .fixid{
-        right: 30px !important;
+        right: 70px !important;
+
+    }
+}
+@media (max-width: 1400px){
+    .fixid{
+        right: 20px !important;
 
     }
 }
