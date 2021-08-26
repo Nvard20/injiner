@@ -1301,9 +1301,7 @@ margin-top: 66px;
     }
 }
 @media (max-width: 1320px){
-    .fixid {
-        right: 60px !important;
-    }
+
     .all-companies {
         max-width: 400px;
     }
