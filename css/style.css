@@ -752,7 +752,7 @@ margin-top: 30px;
         max-width: 460px ;
     }
     .cm-img{
-        height: 95px;
+        height: 125px;
     }
 .btn-link{
     max-width: 375px;
@@ -1262,7 +1262,7 @@ margin-top: 66px;
 }
 @media (max-width: 1700px){
     .fixid{
-        right: 230px;
+        right: 170px;
 
     }
 }
