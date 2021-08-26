@@ -1247,7 +1247,7 @@ margin-top: 66px;
 }
 @media (max-width: 1870px){
     .fixid{
-        right: 80px;
+        right: 125px;
 
     }
 }
@@ -1259,7 +1259,7 @@ margin-top: 66px;
 }
 @media (max-width: 1700px){
     .fixid{
-        right: 160px;
+        right: 230px;
 
     }
 }
@@ -1272,6 +1272,12 @@ margin-top: 66px;
 @media (max-width: 1550px){
     .fixid{
         right: 40px !important;
+
+    }
+}
+@media (max-width: 1500px){
+    .fixid{
+        right: 10px !important;
 
     }
 }
