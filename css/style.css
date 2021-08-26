@@ -1272,6 +1272,12 @@ margin-top: 66px;
 
     }
 }
+@media (max-width: 1600px){
+    .fixid{
+        right: 130px;
+
+    }
+}
 @media (max-width: 1550px){
     .fixid{
         right: 40px !important;
