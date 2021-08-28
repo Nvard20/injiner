@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 .header{
-    filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
+            filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.16));
     background-color: #2a3a59;
     width: 100%;
     position: fixed;
@@ -20,12 +28,18 @@
     width: 100%;
 }
 .inner-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 30px;
     padding-top: 17px;
     padding-bottom: 28px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
 
 }
@@ -45,19 +59,29 @@
     height: 43px;
 }
 .lines-group{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 
 }
 .lines-group li:nth-child(10n+6) span {
     height: 25px;
 }
 .all-lines{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .menu > div{
     
@@ -72,8 +96,12 @@
     margin-left: 10px; */
 }
 .acount-btns{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 
 }
 .acount-btns > a{
@@ -82,15 +110,23 @@ color: #ffffff;
 font-family: "Arial";
 text-decoration: none;
 text-align: center;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
-justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 .reg{
     height: 42px;
     border-radius: 5px;
     padding: 0 10px;
     margin-right: 6px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
 }
 .reg:hover{
@@ -115,16 +151,24 @@ justify-content: center;
     width: 100%;
     height: 2px;
     background:#e50019;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
 }
   
   .hover-1:hover:before {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
   }
   .hover-1:before, .hover-1:after{
     content: '';
     position: absolute;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
     transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
   }
   .lines-group li span:hover{
     background-color: #e50019;
@@ -139,10 +183,13 @@ justify-content: center;
     position: relative;
     max-width: 927px;
 border-radius: 5px;
-filter: drop-shadow(0px 4px 8.5px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 8.5px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 8.5px rgba(0,0,0,0.16));
 background-color: #ffffff;
 margin: auto;
 top: 20px;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
     padding: 12px 0;
 }
@@ -280,7 +327,10 @@ display: flex;
 }
 
 .menu{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .menu > div {
@@ -292,10 +342,19 @@ display: flex;
     margin-top: 50px;
 }
 .acount-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .acount-btns > p{
     text-align: center;
@@ -329,7 +388,8 @@ color: #ffffff;
 font-weight: bold;
 font-family: "Segoe UI";
 text-align: center;
-filter: drop-shadow(0px 4px 6px #000000);
+-webkit-filter: drop-shadow(0px 4px 6px #000000);
+        filter: drop-shadow(0px 4px 6px #000000);
 }
 .baner-txt{
     margin-top: 263px;
@@ -360,7 +420,9 @@ text-align: center;
 }
 .box-info {
 
-    filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
+    -webkit-filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
+
+            filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
     background-color: #ffffff;
     width: 430px;
     padding: 33px 29px;
@@ -387,7 +449,8 @@ margin-top: 45px;
 .services{
     max-width: 233px;
 border-radius: 5px;
-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
 background-color: #ffffff;
 margin-right: 22px;
 width: 100%;
@@ -395,6 +458,8 @@ position: relative;
 z-index: 22222;
 }
 .menu-serv li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
     color: #0e2337;
@@ -406,9 +471,15 @@ z-index: 22222;
 
 }
 .main-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin-bottom: 22px;
 
 }
@@ -439,9 +510,16 @@ position: relative;
     border-bottom: unset !important;
     padding: 10px 0 !important;
     margin-top: 5px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
+.quest:hover .box-info{
+
+    display: block;
+}
+
 .qs{
     position: absolute;
     width: 6px !important;
@@ -459,7 +537,8 @@ position: relative;
 .box-company{
     width: 100%;
     border-radius: 5px;
-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
 background-color: #ffffff;
 margin-bottom: 25px;
 
@@ -469,15 +548,27 @@ margin-bottom: 25px;
     color: #ffffff;
     font-family: "Segoe UI";
     border-radius: 5px;
-    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+    -webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
     background-color: #e50019;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 53px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 38px;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
     transition: .2s;
 
 }
@@ -494,6 +585,8 @@ background-color:#fa5466;
     font-size: 20px;
 color: #000000;
 font-family: "Segoe UI";
+-webkit-transition: all .2s;
+-o-transition: all .2s;
 transition: all .2s;
 padding-bottom: 15px;
 
@@ -524,6 +617,8 @@ padding-bottom: 15px;
 
 }
 .box-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 13px;
     padding-left: 11px;
@@ -553,11 +648,17 @@ font-weight: 400;
 
 }
 .rateings{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 15px;
 }
 .all_contacts{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 5px;
 
@@ -572,9 +673,15 @@ font-weight: 400;
     color: #ffffff;
     font-family: "Arial";
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 5px;
 }
 .rt-link{
@@ -631,15 +738,20 @@ text-align: center;
 }
 .performs{
     max-width: 745px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 100%;
 
 }
 .perf-box{
     padding: 18px 22px;
     max-width: 327px;
-    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+    -webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
     background-color: #ffffff;
     width: 100%;
     margin-right: 9px;
@@ -666,11 +778,14 @@ display: block;
 .regions{
     max-width: 406px;
     border-radius: 5px;
-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
 background-color: #ffffff;
 width: 100%;
 }
 .hd-reg{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .hd-reg > img{
@@ -693,7 +808,8 @@ font-family: "Segoe UI";
 .reg-search{
     height: 38px;
 border-radius: 5px;
-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
 background-color: #ffffff;
 font-size: 20px;
 color: #707070;
@@ -841,7 +957,10 @@ margin-top: 30px;
 }
 @media (max-width: 1100px){
     .performs{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .regions{
         margin-top: 10px;
@@ -850,7 +969,10 @@ margin-top: 30px;
 }
 @media (max-width: 1000px){
     .box-item{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
     }
     .cm-img {
@@ -858,13 +980,23 @@ margin-top: 30px;
         margin-bottom: 10px;
     }
     .main-container{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .all-companies, .services {
         margin-right: 0px;
-        flex-direction: column;
-        order: 3;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
     }
     .services{
         margin-bottom: 20px;
@@ -874,19 +1006,32 @@ margin-top: 30px;
 
     }
     .map-settings{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        order: 2;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
     .performs {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-top: 20px;
         width: 100%;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin-right: 0;
     }
     .box-info {
-        filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
+        -webkit-filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
+                filter: drop-shadow(0px 4px 6px rgba(229,0,25,0.16));
         background-color: #ffffff;
         width: 240px;
         padding: 33px 9px;
@@ -934,16 +1079,24 @@ margin-top: 30px;
         padding: 29px 0px;
         width: 100%;
         margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
    
 }
 .maps-company{
     max-width: 742px;
     border-radius: 5px;
-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+-webkit-filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
+        filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16));
 background-color: #ffffff;
 margin-top: 30px;
 
@@ -983,9 +1136,15 @@ padding-top: 13px;
 }
 .company-link{
     margin-top: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     padding-top: 13px;
     padding-left: 11px;
@@ -997,11 +1156,17 @@ padding-top: 13px;
     width: 100%;
     border: 2px solid #e50019;
     border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 315px;
     height: 39px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 17px;
 color: #e50019;
 font-family: "Arial";
@@ -1054,6 +1219,8 @@ font-family: "Arial";
     font-family: "Arial";
 }
 .top-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .logo-footer{
@@ -1069,18 +1236,28 @@ font-family: "Arial";
     padding-right: 76px;
 }
 .soc{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 }
 .top-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 1375px;
 
 }
 .bottom-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 margin-top: 66px;
 }
 .soc > img{
@@ -1096,7 +1273,10 @@ margin-top: 66px;
     }
 @media (max-width: 1100px){
     .top-footer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .footer-menu{
         margin-top: 10px;
@@ -1104,9 +1284,14 @@ margin-top: 66px;
 }
 @media (max-width: 768px){
     .bottom-footer{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .soc > img{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-right: 10px;
         width: 41px;
@@ -1243,9 +1428,7 @@ margin-top: 66px;
     position: fixed;
     top: 115px;
     right: 185px;
-    overflow-y: scroll;
-    height: 80vh;
-    overflow-x: hidden;
+
     
 }
 @media (max-width: 1870px){
@@ -1352,4 +1535,8 @@ margin-top: 66px;
     #map{
         height: 300px !important;
     }
+}
+.other-container{
+    margin-left: 85px;
+    justify-content: start;
 }

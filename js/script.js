@@ -17,28 +17,27 @@ $('.burger').click(function(){
     }
 });
 
-$('.quest').click(function(){
-    temp = !temp;
-    if(!temp){
-    $(this).children('.box-info').show();
-}else{
-    $(this).children('.box-info').hide();
+// $('.quest').click(function(){
+//     temp = !temp;
+//     if(!temp){
+//     $(this).children('.box-info').show();
+// }else{
+//     $(this).children('.box-info').hide();
 
-}
+// }
 
-});
+// });
 if($(window).innerWidth() >= 1100) {
     window.onscroll = function (){
         if(window.pageYOffset >= 800 && window.pageYOffset<=2410){
-          $('.map-settings').addClass('fixid')
-          $('.main-container').css("justify-content", "start");
-          $('.main-container').css("margin-left", "85px");
+          $('.map-settings').addClass('fixid');
+          $('.main-container').addClass('other-container')
     
         }
         else{
           $('.map-settings').removeClass('fixid');
-          $('.main-container').css("justify-content", "center");
-          $('.main-container').css("margin-left", "0px");
+          $('.main-container').removeClass('other-container')
+
         }
     }
 }else{
@@ -46,7 +45,7 @@ if($(window).innerWidth() >= 1100) {
     $('.main-container').css("justify-content", "center");
     $('.main-container').css("margin-left", "0px");
 }
-let text = document.getElementById('txt');
-$("#search").keyup(function() {
-text.innerHTML =$(this).val();
-  });
+// let text = document.getElementById('txt');
+// $("#search").keyup(function() {
+// text.innerHTML =$(this).val();
+//   });
