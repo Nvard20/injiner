@@ -45,7 +45,3 @@ if($(window).innerWidth() >= 1100) {
     $('.main-container').css("justify-content", "center");
     $('.main-container').css("margin-left", "0px");
 }
-// let text = document.getElementById('txt');
-// $("#search").keyup(function() {
-// text.innerHTML =$(this).val();
-//   });

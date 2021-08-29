@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="preconnect" href="//api-maps.yandex.ru">
     <link rel="dns-prefetch" href="//api-maps.yandex.ru">
 
@@ -136,7 +137,7 @@
             <div class="account-settings">
                 <div class="acount-btns">
                     <a href="#" class="reg">Вход</a>
-                    <a href="#" class="reg">Регистрация</a>
+                    <a href="#" class="reg "  onclick="document.getElementById('id01').style.display='block'">Регистрация</a>
                 </div>
                 <p>Ваш регион: Новый Уренгой и ЯНАО</p>
             </div>
@@ -630,7 +631,39 @@
             </div>
         </div>
     </div>
-    
+    <div id="id01" class="w3-modal register-modal">
+      <div class="w3-modal-content  w3-animate-zoom w3-card-4">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById('id01').style.display='none'"  width="18.033" height="18.034" viewBox="0 0 18.033 18.034" class="close">
+          <g id="Group_195" data-name="Group 195" transform="translate(-8.202 -8.088)">
+            <line id="Line_17" data-name="Line 17" x2="13.79" y2="13.791" transform="translate(10.323 10.209)" fill="none" stroke="#e50019" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_18" data-name="Line 18" x2="13.791" y2="13.79" transform="translate(24.114 10.209) rotate(90)" fill="none" stroke="#e50019" stroke-linecap="round" stroke-width="3"/>
+          </g>
+        </svg>
+        <div class="mod-container-1">
+          <div class="hd-md">
+            <h2>     
+             Ещё не зарегистрированы?
+            </h2>
+          
+          </div>
+        
+          <div class="btn-group">
+            <a href="#">Я заказчик</a>
+            <a href="#">Я исполнитель</a>
+
+          </div>
+            <p class='reg-text'>
+              Если потребуется Вы сможете изменить свой статус в своем личном кабинете
+            </p>
+            <div class="vx-div">
+              <p>Уже зарегистрированы?  </p>
+              <a href='#'>ВХОД</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -17001,17 +17034,17 @@ myMap.controls.add(geolocationControl);
   
       
       
-      var reg_search = document.querySelector('.reg-search');
-      reg_search.oninput = function(){
-          ymaps.borders.load('RU').then(function (geojson) {
-            var  f = geojson.features;
-            f.forEach(function(key, value){
-               var n = key.properties.name;
-            })
-          }, function (e) {
-            // console.log(e);
-          });
-      }
+      // var reg_search = document.querySelector('.reg-search');
+      // reg_search.oninput = function(){
+      //     ymaps.borders.load('RU').then(function (geojson) {
+      //       var  f = geojson.features;
+      //       f.forEach(function(key, value){
+      //          var n = key.properties.name;
+      //       })
+      //     }, function (e) {
+      //     });
+        
+      // }
       
       
     

@@ -792,7 +792,7 @@ width: 100%;
     margin-right: 23px;
     width: 19px;
     height: 19px;
-    margin-top: 6px;
+    margin-top: 18px;
 
 }
 .hd-reg > h2{
@@ -801,7 +801,7 @@ color: #000000;
 font-family: "Segoe UI";
 }
 .inner-region{
-    padding: 29px 26px;
+    padding: 21px 26px;
     width: 100%;
 
 }
@@ -1539,4 +1539,98 @@ margin-top: 66px;
 .other-container{
     margin-left: 85px;
     justify-content: start;
+}
+.register-modal{
+    margin-top: 100px;
+
+}
+.w3-modal-content{
+    border-radius: 2px !important;
+filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.16)) !important;
+background-color: #ffffff !important;
+max-width: 640px !important;
+}
+.hd-md > h2{
+    color: #e50019;
+font-family: "Segoe UI";
+text-align: center;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 50px;
+
+}
+.hd-md{
+    display: flex;
+    justify-content: center;
+}
+.mod-container-1{
+    padding: 20px 20px;
+
+}
+.close{
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    cursor: pointer;
+}
+.w3-animate-zoom {
+    animation: animatezoom 0.3s;
+}
+.btn-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 543.48px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.btn-group > a{
+    border-radius: 5px;
+background: #e50019;
+width: 100%;
+color: white;
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+text-decoration: unset;
+margin-bottom: 12px;
+height: 39.54px;
+transition: .2s;
+}
+.btn-group > a:hover{
+    background: #df4758;
+
+}
+.reg-text{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+color: #000;
+margin-top: 31px;
+margin-bottom: 38px;
+max-width: 357px;
+margin: auto;
+}
+.vx-div{
+    display: flex;
+    align-items: center;
+    max-width: 257px;
+    margin:auto;
+    margin-top: 30px ;
+}
+.vx-div > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+color: #000;
+text-align: center;
+}
+.vx-div >a{
+    color: #e50019;
+    text-align: center;
+    text-decoration: unset;
+    margin-left: 10px;
+
 }
