@@ -1541,7 +1541,7 @@ margin-top: 66px;
     justify-content: start;
 }
 .register-modal{
-    margin-top: 100px;
+    margin-top: 55px;
 
 }
 .w3-modal-content{
@@ -1563,7 +1563,7 @@ margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
-.mod-container-1{
+.mod-container{
     padding: 20px 20px;
 
 }
@@ -1633,4 +1633,150 @@ text-align: center;
     text-decoration: unset;
     margin-left: 10px;
 
+}
+.social-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.soc-link{
+    display: flex;
+   
+}
+.help-hd > h2{
+    margin-bottom: 20px !important;
+
+}
+.lep{
+    max-width: 179px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.lep > p{
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+.lep > p > a{
+    color: #e50019;
+    text-decoration: none;
+}
+.form-block{
+    max-width: 335px;
+    margin: auto;
+    position: relative;
+}
+.input-item{
+    max-width: 335px;
+
+}
+.input-item > input{
+border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+width: 100%;
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #000;
+opacity: 0.54;
+padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+
+}
+.form{
+    position: relative;
+}
+.forg{
+    position: absolute;
+    right: -135px;
+    top: 65px;
+    color: #e50019;
+}
+.input-item-check{
+    display: flex;
+    align-items: center;
+}
+.input-item-check > a{
+    font-family: Arial;
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #005dff;
+margin-left: 5px;
+}
+.input-item-check > input{
+    width: 18px;
+height: 19px;
+border-radius: 5px;
+background: #e50019;
+border: 1px solid #e50019;
+
+}
+.ch_content > input{
+    width: 18px;
+    height: 19px;
+    border-radius: 5px;
+    background: #e50019;
+    border: 1px solid #e50019;
+}
+.comein{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+color: #fff;
+width: 187.48px;
+border-radius: 5px;
+background: #e50019;
+display: block;
+margin: auto;
+text-decoration: none;
+margin-top: 25px;
+margin-bottom: 10px;
+padding: 2px 0;
+transition: .2s;
+}
+.comein:hover{
+    background-color: #e50019;
+
+}
+.input-item > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+text-align: left;
+color: #4b4b4b;
+
+}
+.ch_content{
+    font-family: Arial;
+font-weight: normal;
+font-size: 14px;
+text-align: center;
+display: flex;
+width: 100%;
+margin: auto;
+justify-content: center;
+margin-top: 12px;
+align-items: center;
+}
+.ch_content > a{
+    color: #e50019;
+
+}
+.ch_content > span{
+    margin: 0 10px;
+}
+.ch_content > span:first-child{
+    margin-left: 0px;
+}
+#mod-2{
+    display: none;
+}
+#mod-1{
+    display: none;
 }

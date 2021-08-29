@@ -45,3 +45,9 @@ if($(window).innerWidth() >= 1100) {
     $('.main-container').css("justify-content", "center");
     $('.main-container').css("margin-left", "0px");
 }
+$('.customer').click(function(){
+
+    $('#mod-1').hide();
+    $('#mod-2').show();
+
+})
