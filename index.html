@@ -7,9 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">  
     <link rel="preconnect" href="//api-maps.yandex.ru">
     <link rel="dns-prefetch" href="//api-maps.yandex.ru">
 
@@ -137,7 +135,7 @@
             <div class="account-settings">
                 <div class="acount-btns">
                     <a href="#" class="reg">Вход</a>
-                    <a href="#" class="reg "  onclick="document.getElementById('id01').style.display='block'">Регистрация</a>
+                    <a href="#" class="reg" id='register'>Регистрация</a>
                 </div>
                 <p>Ваш регион: Новый Уренгой и ЯНАО</p>
             </div>
@@ -283,7 +281,7 @@
                             Создать задание
                         </a>
                     </div>
-                    <p>Сэкономьте время <p>
+                    <p>Сэкономьте время </p>
                     <p>на поиске исполнителя</p>
                   
                 </div>
@@ -591,6 +589,9 @@
                             </div>
                             <input type="text" class="reg-search" id="search" placeholder="Начните вводить регион">
                             <h2 id='txt'></h2>
+                            <div class="dropdown-list">
+                               <ul></ul>
+                            </div>
     
                         </div>
                     </div>
@@ -755,26 +756,28 @@
      
     </div>
   </div>
+     
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?c12d79d2-bdb7-4b87-8d5d-5d82a9ffd9a2&lang=ru_Ru"></script>
-
-
-
 <script src="js/script.js"></script>
+
+
+
+
 <script>
+
+function init_map(cords){
+
+    
 
  ymaps.ready(function () {
       // Создание экземпляра карты и его привязка к созданному контейнеру.
      
-     var myGeocoder = ymaps.geocode("Petrozavodsk");
-     var myReverseGeocoder = ymaps.geocode([61.79,34.36]);     
-      
+    
       
      var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
+            center: cords,
             zoom: 7,
             controls: [],
           }, {
@@ -17122,28 +17125,112 @@ myMap.controls.add(geolocationControl);
       //   });
 
  
-  
-      
-      
-      // var reg_search = document.querySelector('.reg-search');
-      // reg_search.oninput = function(){
-      //     ymaps.borders.load('RU').then(function (geojson) {
-      //       var  f = geojson.features;
-      //       f.forEach(function(key, value){
-      //          var n = key.properties.name;
-      //       })
-      //     }, function (e) {
-      //     });
-        
-      // }
-      
-      
-    
-      
        
       
       
+      var reg_search = document.querySelector('.reg-search');
+      reg_search.oninput = function(){
+         var t = this.value;
+         
+         ymaps.borders.load('RU').then(function (geojson, t) {
+            var  f = geojson.features;
+            var t = document.querySelector('.reg-search').value;
+           
+            if(t.length !== 0){
+            
+            var str = t.charAt(0).toUpperCase() + t.slice(1);
+            var  arr = [];
+            f.forEach(function(key, value){
+               var n = key.properties.name;
+               if(n.indexOf(str) !== -1){
+                   arr.push(n);
+                   
+               }              
+            })
+            if(arr.length < 1){
+               var text = "По запросу ничего не найдено, ищите на русском.";
+               var dropdown = document.querySelector('.dropdown-list');
+               var p  = document.createElement('p');
+               p.innerText = text;
+               
+               if(dropdown.classList.contains('show') === false){
+               dropdown.classList.add('show');
+               dropdown.appendChild(p);
+               }
+            }else{
+               console.log(arr);
+               var content = '';
+               var div = document.querySelector('.dropdown-list');
+               var ul =  document.createElement('ul');
+               div.appendChild(ul);
+               var list = document.querySelector('.dropdown-list ul'); 
+               if(arr.length < 10){
+                  var  l = arr.length;
+               }else{
+                  l = 10;
+               }
+               for(var i=0; i<l; i++){
+                  var a = arr[i];
+                 content += '<li><a class="search-item">'+ a +'</a></li>';
+                  
+               }
+               list.innerHTML = content;
+               if(div.classList.contains('show') === false){
+                 div.classList.add('show');
+                 
+               }  
+            }
+           
+           }else{
+             var dropdown = document.querySelector('.dropdown-list');
+             console.log(t.length); 
+             dropdown.classList.remove('show');
+             dropdown.innerHTML = '';
+           
+           }
+            
+          }, function (e) {
+            // console.log(e);
+          });
+          
+      }
+      
+      
+      document.addEventListener('click', function(e){
+        e = event.target;
+        if(e.classList.contains('search-item')){
+          var text = e.innerText;
+          var url = 'https://geocode-maps.yandex.ru/1.x/?apikey=c12d79d2-bdb7-4b87-8d5d-5d82a9ffd9a2&format=json&geocode=' + text
+           $.ajax({
+              type: 'GET',
+              url: url,
+              success:function(response){
+                   var cordinates = response.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos;
+                   var dropdown = document.querySelector('.dropdown-list');
+                   dropdown.classList.remove('show');
+                   dropdown.innerHTML = '';
+                   var cord = cordinates.split(' ');
+                   var map = document.querySelector('#map');
+                   var search = document.querySelector('.reg-search');
+                   search.value = '';
+                   map.innerHTML = '';
+                   init_map(cord);
+            }
+         })
+ 
+        }
+      })    
+    
+       
+
+
+}
+
+init_map([55.751574, 37.573856]);
+      
  </script>
+
+
 
 </body>
 </html> 

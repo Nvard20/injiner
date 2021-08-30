@@ -45,9 +45,20 @@ if($(window).innerWidth() >= 1100) {
     $('.main-container').css("justify-content", "center");
     $('.main-container').css("margin-left", "0px");
 }
+
+
+//onclick="document.getElementById('id01').style.display='block'"
+$('#register').click(function(){
+    $('#id01').show();
+})
 $('.customer').click(function(){
 
     $('#mod-1').hide();
     $('#mod-2').show();
+
+})
+$('#email').click(function(){
+    $('#mod-2').hide();
+    $('#mod-3').show();
 
 })
