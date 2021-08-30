@@ -54,6 +54,18 @@ $('#register').click(function(){
 $('#adpro').click(function(){
     $('#id02').show();
 });
+$('#nxmore').click(function(){
+
+    $('#log-1').hide();
+    $('#log-2').show();
+
+});
+$('#nxl').click(function(){
+
+    $('#log-2').hide();
+    $('#log-3').show();
+
+});
 $('#login').click(function(){
     $('#id03').show();
 });

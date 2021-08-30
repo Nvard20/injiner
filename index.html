@@ -994,10 +994,11 @@
     <div id="id03" class="w3-modal ">
       <div class="w3-modal-content  w3-animate-zoom w3-card-4">
         <img src="img/group_195.png" alt="close" onclick="document.getElementById('id03').style.display='none'"  width="18.033" height="18.034"  class="close">
-        <div class="mod-container">
+         <div class="mod-container" id="log-1">
           <div class="hd-md">
             <h2>     
-              Восстановление пароля            </h2>
+              Восстановление пароля     
+           </h2>
           
           </div>    
           <div class="input-item">
@@ -1017,15 +1018,48 @@
             <input type="password" placeholder="****">
           </div>
           <div class="input-item">
-            <a href="#" class="comein" >Далее</a>
+            <a href="#" class="comein" id="nxmore">Далее</a>
          </div>
     
          </div>
+         <div class="mod-container" id="log-2">
+          <div class="hd-md">
+            <h2>     
+              Восстановление пароля
+           </h2>
+          
+          </div>    
+          <div class="input-item">
+            <p>
+              Придумайте пароль:
+            </p>
+            <input type="password" placeholder="****">
+          </div>
+    
+          <div class="input-item">
+            <p>
+              Повторите пароль:            
+            </p>
+            <input type="password" placeholder="****">
+          </div>
+          <div class="input-item">
+            <a href="#" class="comein" id="nxl">Далее</a>
+         </div>
+    
+         </div>
+         <div class="mod-container" id='log-3'>
+            <div class="hd-md">
+              <h2>Ваш пароль был изменен</h2>
+          </div>
+          <div class="input-item">
+            <a href="personal-account.html" class="comein" >Войти</a>
+          </div>
+  
       </div>
 
     </div>
   
-  </div>
+    </div>
      
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

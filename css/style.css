@@ -1941,3 +1941,149 @@ margin-top: 20px;
     margin-top: 35px;
 
 }
+#log-2{
+    display: none;
+}
+#log-3{
+    display: none;
+}
+.main-personal{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.prev-div > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e50019;
+}
+.prev-div > a > span{
+    margin-left: 8px;
+}
+.prev-div{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+.head-title{
+    position: relative;
+}
+.head-title > h2{
+    max-width: 500px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #2a3a59;
+    background: white;
+    margin: auto;
+
+}
+.line{
+
+    top: 36px;
+    width: 100%;
+    height: 2px;
+    background: #e50019;
+    position: absolute;
+    z-index: -8;
+}
+.main-person > h3{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 30px;
+text-align: center;
+color: #000;
+
+}
+.main-person{
+    max-width: 900px;
+    margin: auto;
+}
+.main-person > form{
+    width: 100%;
+}
+.form-item > input {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 16%);
+    width: 100%;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    opacity: 0.54;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+}
+.form-item > p{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 28px;
+text-align: left;
+color: #000;
+position: relative;
+}
+.star{
+    color: #e50019;
+}
+.person-form{
+    margin-top: 53px;
+}
+.form-button{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+
+}
+.cnsl{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #000;
+
+}
+@media (max-width: 1200px){
+    .main-personal{
+        padding: 0 20px;
+    }
+    .form-item > p{
+        font-size: 20px;
+    }
+    .head-title > h2{
+        font-size: 38px;
+
+    }
+    .person-form {
+        margin-top: 53px;
+        padding: 0 20px;
+    }
+}
+.st-hover{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 18px;
+text-align: center;
+color: #000;
+background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(229, 0, 25, 0.16));
+padding: 4px 10px;
+position: absolute;
+top: -28px;
+display: none;
+right: 65px;
+
+}
+.person-form{
+    margin-bottom: 115px;
+}
+.form-item > p:first-child:hover .st-hover{
+    display: block !important;
+}
