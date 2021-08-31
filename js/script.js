@@ -20,7 +20,7 @@ $('.burger').click(function(){
 
 if($(window).innerWidth() >= 1100) {
     window.onscroll = function (){
-        if(window.pageYOffset >= 800 && window.pageYOffset<=2440){
+        if(window.pageYOffset >= 800 && window.pageYOffset<=2500){
           $('.map-settings').addClass('fixid');
           $('.main-container').addClass('other-container')
     
@@ -108,4 +108,8 @@ $('#chg').click(function(){
     $('#mod-8').hide();
     $('#mod-9').show();
 
+})
+$('.cat-box').click(function(){
+    $(this).next().toggle(300);
+    $(this).children('span').toggleClass('rotate')
 })
