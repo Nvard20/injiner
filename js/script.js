@@ -17,19 +17,10 @@ $('.burger').click(function(){
     }
 });
 
-// $('.quest').click(function(){
-//     temp = !temp;
-//     if(!temp){
-//     $(this).children('.box-info').show();
-// }else{
-//     $(this).children('.box-info').hide();
 
-// }
-
-// });
 if($(window).innerWidth() >= 1100) {
     window.onscroll = function (){
-        if(window.pageYOffset >= 800 && window.pageYOffset<=2410){
+        if(window.pageYOffset >= 800 && window.pageYOffset<=2440){
           $('.map-settings').addClass('fixid');
           $('.main-container').addClass('other-container')
     
@@ -47,17 +38,25 @@ if($(window).innerWidth() >= 1100) {
 }
 
 
-//onclick="document.getElementById('id01').style.display='block'"
 $('#register').click(function(){
     $('#id01').show();
 });
 $('#adpro').click(function(){
     $('#id02').show();
 });
+$('#comadd').click(function(){
+    $('#id04').show();
+});
 $('#nxmore').click(function(){
 
     $('#log-1').hide();
     $('#log-2').show();
+
+});
+$('#goin').click(function(){
+
+    $('#goacc').hide();
+    $('#gocode').show();
 
 });
 $('#nxl').click(function(){

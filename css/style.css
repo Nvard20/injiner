@@ -1937,7 +1937,7 @@ margin-top: 20px;
         top: 123px;
     }
 }
-#id02,#id03{
+#id02,#id03,#id04{
     margin-top: 35px;
 
 }
@@ -2044,10 +2044,12 @@ position: relative;
 }
 .cnsl{
     font-family: "Segoe UI";
-font-weight: normal;
-font-size: 20px;
-text-align: left;
-color: #000;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+    margin-top: 16px;
+    margin-left: 4px;
 
 }
 @media (max-width: 1200px){
@@ -2086,4 +2088,49 @@ right: 65px;
 }
 .form-item > p:first-child:hover .st-hover{
     display: block !important;
+}
+.title{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 30px;
+text-align: center;
+color: #000;
+
+}
+.infs{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 25px;
+text-align: center;
+color: #000;
+margin-bottom: 63px;
+}
+.asd{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: center;
+color: #000;
+
+}
+#gocode{
+    display: none;
+}
+.form-numb{
+    max-width: 460px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+}
+.numbs > input{
+    margin: auto;
+    max-width: 82px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+
 }
