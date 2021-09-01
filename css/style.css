@@ -206,6 +206,7 @@ display: flex;
     margin: 3px 15px;
     width: 17px;
     height: 17px;
+    margin-top: 5px;
 
 }
 @media (max-width: 1800px){
@@ -1937,7 +1938,7 @@ margin-top: 20px;
         top: 123px;
     }
 }
-#id02,#id03,#id04{
+#id02,#id03,#id04,#id05,#id06{
     margin-top: 35px;
 
 }
@@ -2136,7 +2137,6 @@ color: #000;
 }
 .left-aside{
     max-width: 368px;
-    margin-right: 50px;
 }
 .cat-box{
     display: flex;
@@ -2144,7 +2144,7 @@ color: #000;
 filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
 width: 100%;
 align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     cursor: pointer;
     padding: 0 9px;
 
@@ -2263,7 +2263,9 @@ margin-right: 5px;
 }
 .main-job{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 80px;
+
 }
 .punkt{
     width: 30px;
@@ -2364,4 +2366,443 @@ opacity: 0.98;
     color: #000;
     opacity: 0.57;
     padding: 1px 17px;
+}
+.file-container{
+    width: 100%;
+    border-radius: 15px;
+    border: 3px dashed #f00;
+    padding: 15px 20px;
+
+}
+
+input[type='file'] {
+    width:400px;
+    height:25px;
+    opacity:0
+}
+
+#button {
+    cursor: pointer;
+    display: block;
+    width: 35px;
+    height:25px;
+    color: white;
+    position: absolute;
+    right:0;
+    top: 0;
+    font-size: 11px;
+    line-height:25px;
+}  
+.fl{
+    position: relative;
+}
+.format{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #9a9ea4;
+
+}
+.file-all{
+    display: flex;
+    justify-content: space-between;
+}
+.file-box{
+    display: flex;
+    align-items: center;
+}
+.png{
+    width: 48px;
+height: 64px;
+background: #fff;
+border: 1px solid #f00;
+text-align: center;
+color: #f00;
+font-weight: bold;
+align-items: center;
+margin-right: 3px;
+display: flex;
+justify-content: center;
+}
+.file-box > p{
+    max-width: 111px;
+}
+.size{
+    margin-top: 11px;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+.btnsg{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.outline{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    width: 201.48px;
+    border-radius: 5px;
+    color: #e50019;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 4px 0px;
+    transition: .2s;
+    border: 2px solid;
+}
+.outline:hover{
+    background-color: #e50019;
+    color: white;
+}
+.aasd{
+    font-family: "Segoe UI";
+    font-weight: 600;
+    font-size: 20px;
+    
+    text-align: center;
+    color: #000;
+}
+.file-shadow{
+    background: #fff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 16%) !important;
+    padding: 25px;
+}
+.question-box{
+    max-width: 375px;
+border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+padding: 20px;
+}
+.question-box > h4{
+    font-family: "Segoe UI";
+font-weight: bold;
+font-size: 21px;
+text-align: left;
+color: #000;
+
+}
+.itemsquest > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 14px;
+line-height: 30px;
+text-align: left;
+color: #000a4e;
+
+}
+.pitc{
+    width: 375px;
+height: 211px;
+border-radius: 5px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+margin-bottom: 22px;
+}
+.pitc > img{
+    width: 100%;
+    height: 100%;
+}
+.pic-aside{
+    margin-top: 30px;
+
+}
+@media (max-width: 1400px){
+    .center-container{
+        max-width: 632px;
+        margin: 0 5px;
+
+    }
+    .left-aside{
+        max-width: 280px;
+
+    }
+    .pitc,.question-box{
+        width: 320px;
+
+    }
+    .serv-category > p,.serv-category > input,.cat-box > p,.sm-txt,.sv-cat-check > span{
+        font-size: 16px;
+
+    }
+    .left-aside > p{
+        font-size: 18px;
+
+    }
+    .punkt{
+        top: 45px;
+
+    }
+}
+@media (max-width: 1200px){
+
+    .serv-category > p,.serv-category > input,.cat-box > p,.sm-txt,.sv-cat-check > span{
+        font-size: 14px;
+
+    }
+    .left-aside > p{
+        font-size: 16px;
+
+    }
+  
+    .center-container{
+        max-width: 520px;
+
+    }
+}
+@media (max-width: 1100px){
+    .center-container {
+        max-width: 485px;
+    }
+    input[type='file'] {
+        width: 316px;
+        height: 25px;
+        opacity: 0;
+    }
+}
+@media (max-width: 1000px){
+    .main-job {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-aside{
+        margin-top: 30px;
+
+    }
+    .ymaps-2-1-79-map{
+        width: 400px !important;
+    }
+}
+@media (max-width: 767px){
+    .center-container{
+        max-width: unset;
+        margin: 0 10px;
+    }
+    .center-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .serv-category{
+        margin-right: 0;
+    }
+    .left-aside{
+        max-width: unset;
+
+    }
+    input[type='file'] {
+        width: 200px;}
+.btnsg{
+    flex-wrap: wrap;
+
+}
+.file-box > p {
+    max-width: 111px;
+    font-size: 12px;
+}
+.outline {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 18px;
+}
+.file-all{
+    flex-wrap: wrap;
+}
+.file-box{
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 500px){
+    .ymaps-2-1-79-map{
+        width: 300px !important;
+    }
+}
+@media (max-width: 400px){
+    input[type='file'] {
+        width: 100px;
+    }
+    .main-job{
+        padding: 0 10px;
+
+    }
+}
+.out{
+    width: 80%;
+}
+.main-company{
+    max-width: 1450px;
+    margin: auto;
+}
+.inner-primary{
+    max-width: 950px;
+    border-radius: 5px;
+    background: #2a3a59;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    margin: auto;
+    padding: 18px;
+
+
+}
+.inner-primary > .search{
+    padding: 4px 0;
+max-width: unset;
+top: 0;
+}
+.tools-item > input{
+    max-width: 293px;
+border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+width: 100%;
+padding: 5px 5px;
+
+}
+.tools-item {
+    position: relative;
+}
+.tool{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+text-align: left;
+color: #fff;
+
+}
+.tools-block{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.tl-box{
+    width: 156px;
+    background: #fff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+cursor: pointer;
+}
+.tl-box > img{
+    width: 25px;
+    height: 14px;
+}
+.tool-down{
+    background: #fff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #b2b2b2;
+    margin-top: 1px;
+    padding: 15px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+
+}
+.com_in{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    width: 186px;
+    border-radius: 5px;
+    background: #e50019;
+    display: block;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding: 2px 0;
+    transition: .2s;
+    border: none;
+    cursor: pointer;
+
+}
+.tools-rates{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.tools-rates > p{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 25px;
+text-align: left;
+color: #fff;
+
+}
+.raiting{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 25px;
+text-align: center;
+color: #fc0101;
+margin: 0px 25px;
+cursor: pointer;
+
+}
+.dt{
+    font-family: Arial;
+font-weight: normal;
+font-size: 25px;
+text-align: center;
+color: #fff;
+cursor: pointer;
+}
+.subscribe{
+    background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+width: 100%;
+padding: 20px;
+margin: 32px 0;
+position: relative;
+}
+.primary-container{
+    max-width: 950px;
+}
+.subscribe > p{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 16px;
+text-align: center;
+color: #000;
+margin-top: 30px;
+
+}
+.subs > .com_in{
+    margin: auto;
+}
+.subs{
+    margin-top: 20px;
+}
+.sub_close{
+    position: absolute;
+   right: 15px;
+    cursor: pointer;
 }

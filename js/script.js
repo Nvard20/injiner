@@ -41,6 +41,12 @@ if($(window).innerWidth() >= 1100) {
 $('#register').click(function(){
     $('#id01').show();
 });
+$('#plc-order').click(function(){
+    $('#id05').show();
+});
+$('#cansle').click(function(){
+    $('#id06').show();
+});
 $('#adpro').click(function(){
     $('#id02').show();
 });
@@ -112,4 +118,14 @@ $('#chg').click(function(){
 $('.cat-box').click(function(){
     $(this).next().toggle(300);
     $(this).children('span').toggleClass('rotate')
+});
+$('#button').click(function () {
+    $("input[type='file']").trigger('click');
+})
+
+$("input[type='file']").change(function () {
+    $('#val').text(this.value.replace(/C:\\fakepath\\/i, ''))
+})
+$('.tl-box').click(function(){
+    $('.tool-down').toggle();
 })
