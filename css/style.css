@@ -687,7 +687,7 @@ font-weight: 400;
 }
 .rt-link{
     font-size: 14px !important;
-text-decoration: underline !important;
+/* text-decoration: underline !important; */
 color: #6a6969 !important;
 font-family: "Arial";
 }
@@ -2805,4 +2805,160 @@ margin-top: 30px;
     position: absolute;
    right: 15px;
     cursor: pointer;
+}
+.maket-container{
+width: 100%;
+background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+padding: 20px;
+margin-bottom: 20px;
+
+}
+.maket-container > p{
+    font-family: Arial;
+font-weight: normal;
+font-size: 20px;
+text-align: right;
+color: #000;
+
+}
+.maket-logo{
+    width: 148px;
+height: 148px;
+background: #fff;
+border: 1px solid #2a3a59;
+display: flex;
+align-items: center;
+}
+.maket-logo > img{
+    width: 100%;
+    height: auto;
+    min-height: 51px;
+    max-height: 100%;
+}
+.hd-maket > h2{
+    font-family: Arial;
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+color: #9100ff;
+
+}
+.maket{
+    display: flex;
+    align-items: flex-start;
+}
+.maket-info{
+    display: flex;
+}
+.in{
+    margin-left: 40px;
+
+}
+.green{
+    background: #25b92f;
+
+}
+.hd-maket{
+    margin-right: 10px;
+
+}
+.in > p{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 18px;
+line-height: 25px;
+text-align: left;
+color: #000;
+}
+.about-company > h3,.example-work > h3{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 25px;
+text-align: left;
+color: #2a3a59;
+margin-bottom: 25px;
+margin-top: 10px;
+}
+.about-company > p{
+    font-family: Arial;
+font-weight: normal;
+font-size: 18px;
+text-align: left;
+color: #000;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.works-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-box{
+    max-width: 287px;
+height: 184px;
+
+}
+.work-box > img{
+    width: 100%;
+    height: 100%;
+}
+.send_msg{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    width: 241.48px;
+    border-radius: 5px;
+    background: #e50019;
+    display: block;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 2px 0;
+    transition: .2s;
+    text-align: center;
+}
+.work-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.orange > h2{
+    color: #d89000 ;
+
+}
+.sin > h2{
+    color: #00d896;
+
+}
+.message-container{
+    width: 100%;
+    background: #fff;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+    padding: 20px;
+}
+.msg-title > h2{
+    font-size: 35px;
+
+}
+.msg-box {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    height: 220px;
+}
+.msg-box > textarea{
+    width: 100%;
+    font-family: Arial;
+font-weight: normal;
+font-size: 26px;
+text-align: left;
+color: #707070;
+height: 100%;
+padding: 20px;
+
 }
