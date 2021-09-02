@@ -121,11 +121,19 @@ $('.cat-box').click(function(){
 });
 $('#button').click(function () {
     $("input[type='file']").trigger('click');
-})
+});
 
 $("input[type='file']").change(function () {
     $('#val').text(this.value.replace(/C:\\fakepath\\/i, ''))
 })
+
+;
+$('#atch').click(function () {
+    $("input[type='file']").trigger('click');
+});
+$("input[type='file']").change(function () {
+    $('#file-val').text(this.value.replace(/C:\\fakepath\\/i, ''))
+});
 $('.tl-box').click(function(){
     $('.tool-down').toggle();
 })
