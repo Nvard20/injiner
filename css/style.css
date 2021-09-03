@@ -3508,3 +3508,152 @@ text-align: left;
 color: #000;
 
  }
+ @media (max-width: 1000px){
+     .top_content,.middle-content{
+        flex-direction: column;
+        align-items: center;
+     }
+     .text-contact {
+        width: 100%;
+    }
+    .rew-content{
+        flex-direction: column;
+
+    }
+    .wrap_per{
+        margin-top: 25px;
+
+    }
+ }
+ .faq-title{
+    font-family: "Segoe UI";
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+    color: #2a3a59;
+    border-bottom: 3px solid #e50019;
+    padding: 13px 0;
+
+ }
+ .faq-content > p{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+    color: #000;
+    margin: 25px 0;
+    
+ }
+ .faq-page{
+    margin-top: 45px;
+
+ }
+ .chat-container{
+
+    display: flex;
+    align-items: flex-start;
+ }
+ .chats{
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    max-width: 1606px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 160px;
+
+ }
+ .parametrs{
+     max-width: 1471px;
+     margin: auto;
+     margin-top: 25px;
+
+ }
+ .parametrs > ul {
+     display: flex;
+     justify-content: space-between;
+ }
+ .parametrs > ul > li > a{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    color: #2a3a59;
+    text-decoration: none;
+    transition: .2s;
+ }
+ .parametrs > ul > li > a:hover{
+     border-bottom: 2px solid #e50019;
+ }
+
+ .chat-img{
+    width: 148px;
+    height: 148px;
+    margin-right: 20px;
+
+ }
+ .chat-img > img{
+     width: 100%;
+     height: 100%;
+ }
+
+ .chat-content{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     align-items: flex-start;
+
+ }
+ .pocht{
+     display: flex;
+     align-items: center;
+ }
+ .pocht > h4{
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+    color: #000;
+    margin-right: 30px;
+
+ }
+ .pocht > div > img{
+    width: 29.8px;
+    height: 22.59px;
+margin-right: 10px;
+
+ }
+ .pocht > div{
+    display: flex;
+    align-items: center;
+ }
+ .pocht > a{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: left;
+    color: #e50019;
+    
+ }
+ .pocht > div:first-child{
+     margin-right: 30px;
+ }
+ .lnk{
+     display: flex;
+ }
+ .lnk > p{
+    margin-right: 20px;
+
+ }
+ .lnk > a{
+     color: #e50019;
+ }
+ .pocht-txt > p,.lnk{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 23px;
+    text-align: left;
+    color: #000;
+    
+ }
