@@ -3683,10 +3683,15 @@ color: #2a3a59;
     width: 61px;
 height: 61px;
 margin-right: 10px;
+background: #fff;
+    border: 1px solid #707070;
+    border-radius: 50%;
 }
 .user-img > img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+
 }
 .user-box{
     display: flex;
@@ -3729,11 +3734,21 @@ color: #535353;
 
 }
 .customer-table{
-    max-width: 1173px;
 border-radius: 5px;
 background: #fff;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
 padding:20px;
+
+}
+.bot{
+    max-width: 1173px;
+    width: 100%;
+
+}
+.chat-bot{
+    border-radius: 35px 35px 5px 5px;
+background: rgba(42, 58, 89, 0.05);
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
 width: 100%;
 
 }
@@ -3776,4 +3791,186 @@ color: #000;
 .red{
     color: #e50019 !important;
 
+}
+.chat-bot > h4{
+    font-family: Arial;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+color: #2a3a59;
+padding: 7px 0;
+border-bottom: 1px solid #e50019;
+max-width: 303px;
+margin: auto;
+}
+.chat-bot{
+    margin: 20px 0;
+
+}
+.us-img{
+    width: 51px;
+    height: 51px;
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    margin-bottom: -50px;
+
+}
+.us-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.us-sms{
+    max-width: 392px;
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 23px;
+text-align: left;
+color: #000;
+background-color: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+padding: 10px;
+position: relative;
+}
+.us-sms > span{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: right;
+color: #6d6d6d;
+display: block;
+
+}
+.user-bot{
+    display: flex;
+
+    align-items: flex-end;
+position: relative;
+margin-bottom: 40px;
+
+}
+.user-chat-bot{
+    max-width: 1045px;
+    margin: auto;
+        padding: 50px 0;
+}
+.ch-line{
+    height: 1px;
+    background-color: #e50019;
+    margin: auto;
+    position: absolute;
+    top: 17px;
+    z-index: -99;
+    width: 20%;
+    margin: auto;
+    left: 40%;
+}
+.ch-date{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: center;
+color: #000;
+margin: auto;
+max-width: 160px;
+background: #f4f5f7;
+
+}
+.chat-date{
+    position: relative;
+  
+}
+
+
+.user-bot-2{
+    justify-content: end;
+}
+.text-sms{
+    width: 100%;
+    border-radius: 10px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+padding: 20px 10px;
+}
+.structure{
+    display: flex;
+}
+.st-file{
+    position: relative;
+}
+.st-file > input{
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+}
+.st-file > img{
+    position: absolute;
+    cursor: pointer;
+}
+.structure > input{
+    width: 100%;
+    background: #fff;
+    border: none;
+    margin-left: 6px;
+    padding: 5px 10px;
+}
+.btn-sms{
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 1000px){
+    .customer-content{
+        flex-direction: column;
+  
+    }
+    .pocht {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .chat-content{
+        flex-direction: column;
+
+    }
+}
+@media (max-width: 767px){
+    .chat-container{
+        flex-direction: column;
+    }
+    .parametrs{
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .parametrs > ul > li > a {
+        white-space: nowrap;
+        font-size: 18px;
+
+    }
+
+.pocht-txt > p, .lnk {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+}
+.lnk{
+    display: flex;
+    flex-direction: column;
+}
+.pocht > h4{
+    font-size: 28px;
+
+}
+.us-sms{
+    font-size: 18px;
+
+}
+.att > h5{
+    font-size: 20px;
+
+}
 }
