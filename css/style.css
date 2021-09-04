@@ -3974,3 +3974,125 @@ padding: 20px 10px;
 
 }
 }
+.customer-data{
+    border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+padding: 20px;
+margin: 30px 0;
+}
+.customer-figure{
+    max-width: 1258px;
+    margin: auto;
+    display: flex;
+}
+.fg-img > a{
+    font-family: "Segoe UI";
+font-weight: 300;
+font-size: 20px;
+text-align: left;
+color: #5a5a5a;
+text-decoration: none;
+margin-top: 5px;
+}
+.fg-img{
+    margin-right: 40px;
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+.option{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 20px;
+text-align: left;
+color: #000;
+margin-bottom: 35px;
+}
+.option > span{
+    margin-right: 5px;
+
+}
+.name-sait{
+color: #e50019;
+}
+.opstar{
+    position: relative;
+}
+.op{
+    position: absolute;
+    right: -90px;
+    top: -28px;
+    font-size: 13px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0px 4px 10px rgb(229 0 25 / 16%);
+    display: none;
+}
+
+.opstar:hover .op{
+    display: block;
+}
+.change-content{
+    max-width: 1258px;
+    margin: auto;
+}
+.change-content > h3 {
+    font-family: Arial;
+font-weight: normal;
+font-size: 30px;
+text-align: left;
+color: #000;
+
+}
+.pass > p{
+    font-family: Arial;
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #000;
+
+}
+.pass > input{
+    border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+border: none;
+padding: 5px;
+max-width: 309px;
+width: 100%;
+}
+.chpass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+
+}
+.change-form{
+    margin: 40px 0;
+
+}
+@media (max-width: 1000px){
+    .chpass{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .pass{
+        margin-right: 20px;
+        margin-bottom: 15px;
+    
+    }
+    .op{
+        right: 0px;
+
+    }
+    .customer-figure{
+        flex-direction: column;
+    }
+    .customer-info{
+        margin-top: 20px;
+    }
+}
