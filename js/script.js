@@ -136,4 +136,35 @@ $("input[type='file']").change(function () {
 });
 $('.tl-box').click(function(){
     $('.tool-down').toggle();
-})
+});
+$('.current-archive div ').on('click', function () {
+
+  
+    $('.current-archive div').removeClass('active-div ') ;
+   $(this).addClass('active-div')
+
+  
+});
+var mySwiper = new Swiper ('.slider-main', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay:false,
+      slidesPerView: 4,
+  
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is <= 499px
+        310: {
+            slidesPerView: 1,
+          
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 4,
+        }
+    }
+  });

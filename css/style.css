@@ -4096,3 +4096,256 @@ width: 100%;
         margin-top: 20px;
     }
 }
+.current-archive{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 31px;
+text-align: center;
+color: #2a3a59;
+display:flex;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+.current-archive > div{
+margin-right: 15px;
+}
+.archive-product{
+
+display: flex;
+justify-content: space-between;
+}
+.prods{
+    max-width: 1640px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 35px;
+
+}
+.top-task{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.top-task > div{
+    font-family: Arial;
+font-weight: bold;
+font-size: 20px;
+text-align: left;
+color: #000;
+
+}
+.top-task > p{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 18px;
+text-align: left;
+color: #000;
+
+}
+.top-task > span{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #707070;
+
+}
+.left-part > h3{
+
+font-family: "Segoe UI";
+font-weight: bold;
+font-size: 30px;
+text-align: left;
+color: #000;
+
+}
+.left-part > p{
+
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #000;
+margin: 12px 0;
+
+}
+.count{
+    display: flex;
+    font-family: Arial;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+.count > p{
+    text-decoration: underline;
+   }
+.sa > span{
+    text-decoration: underline;
+}
+.right-part{
+    width: 100%;
+max-width: 337px;
+}
+.left-part{
+    max-width: 1400px;
+    width: 71%;
+}
+.right-part > h3{
+    font-size: 25px;
+color: #e50019;
+}
+h3 > span{
+    color: black !important;
+}
+.img-arch  > figure{
+    max-width: 337px;
+height: 300.07px;
+
+}
+.img-arch > figure > img{
+    width: 100%;
+    height: 100%;
+}
+.right-part > h4{
+    font-family: "Segoe UI";
+font-weight: normal;
+text-decoration: underline;
+font-size: 26px;
+color: #000;
+
+}
+.looks-set{
+    display: flex;
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #707070;
+margin-bottom: 40px;
+
+}
+.looks-set > p{
+    margin-right: 20px;
+}
+.looks-set > a{
+    color: #707070;
+
+}
+.gray {
+    background: #a4a4a4;
+    width: 230px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+margin-top: 0;
+}
+.font{
+    font-size: 20px;
+
+}
+.btnset-group > a{
+    width: 30px;
+    height: 35px;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+
+}
+.btnset-group > a > img{
+    width: 100%;
+}
+.btnset-group{
+    display: flex;
+    align-items: center;
+}
+.setting-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.topSetting{
+    max-width: 1424px;
+
+}
+.current-archive > div{
+    cursor: pointer;
+}
+.active-div{
+    padding-bottom: 2px;
+    border-bottom: 2px solid red;
+}
+.slider-main {
+    max-width: 1600px;
+    overflow: hidden !important;
+    margin: auto !important;
+    margin-top: 40px;
+}
+.slide-img{
+    width: 275.18px;
+height: 245.02px;
+margin: auto;
+}
+.slide-img > img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #E50019 !important;
+
+}
+.topSetting > h4{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 24px;
+text-align: left;
+color: #000;
+
+}
+@media (max-width: 1000px){
+    .archive-product{
+        flex-direction: column;
+    }
+    .current-archive{
+        font-size: 25px;
+    }
+    .left-part > h3 {
+        font-family: "Segoe UI";
+        font-weight: bold;
+        font-size: 26px;
+    }
+    .left-part > p {
+        font-family: "Segoe UI";
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .right-part > h3 {
+        font-size: 21px;
+        color: #e50019;
+    }
+            
+}
+@media (max-width: 600px){
+    .setting-buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btnset-group{
+        margin: 20px 0;
+
+    }
+    .top-task{
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px){
+    .swiper-button-next,.swiper-button-prev{
+        display: none !important;
+    }
+}
