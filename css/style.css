@@ -4278,6 +4278,10 @@ margin-top: 0;
 }
 .active-div{
     padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+
+}
+.active-div:hover{
     border-bottom: 2px solid red;
 }
 .slider-main {
@@ -4347,5 +4351,259 @@ color: #000;
 @media (max-width: 400px){
     .swiper-button-next,.swiper-button-prev{
         display: none !important;
+    }
+}
+.order-content{
+    max-width: 1600px;
+    margin: auto;
+    
+background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+padding: 20px;
+}
+.ord{
+    max-width: 500px;
+    margin: auto;
+}
+.ord > h3{
+    text-align: center;
+}
+.ord > img{
+    width: 67px;
+    height: 67px;
+    margin: auto;
+    display: flex;
+}
+.top-resp{
+    display: flex;
+    max-width: 1458px;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.top-resp > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+text-decoration: underline;
+font-size: 20px;
+text-align: left;
+color: #000;
+
+}
+.atr > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #707070;
+
+}
+.atr > div > span{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 18px;
+text-align: left;
+color: #059226;
+margin-right: 10px;
+margin-top: 5px;
+display: flex;
+align-items: center;
+}
+.atr > div{
+    display: flex;
+    align-items: center;
+}
+.prods > h3 {
+    font-family: "Segoe UI";
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+color: #000;
+margin-bottom: 20px;
+}
+.my-resp > h4 {
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+color: #000;
+border-bottom: 2px solid red;
+max-width: 230px;
+margin: auto;
+}
+.select-box{
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.select-box > select{
+    margin-right: 30px;
+
+    width: 220px;
+height: 40px;
+border-radius: 10px;
+background: #fff;
+border: 1px solid #707070;
+outline: none;
+padding: 0 5px;
+font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+text-align: left;
+color: #000;
+cursor: pointer;
+}
+.rsep-data > div{
+    cursor: pointer;
+}
+.rsep-data > div > span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.resp-data{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.dy-box{
+    background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+padding: 20px;
+display: none;
+}
+.res_ponse{
+    max-width: 1206px;
+background: #fff;
+filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
+margin: auto;
+padding: 20px;
+}
+.name-resp{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: left;
+color: #000;
+
+}
+.rsp-line{
+    display: flex;
+    max-width: 64%;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #000;
+
+}
+.rst-img-box{
+    width: 148px;
+height: 148px;
+
+}
+.rst-img-box > img {
+    width: 100%;
+    height: 100%;
+}
+.rst-asd{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lkdl{
+    margin-top: 0px;
+    color: gray;
+}
+span > i{
+margin-right: 5px;
+}
+.score{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #000;
+
+}
+.fd-text{
+    max-width: 988px;
+
+}
+.fd {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.portfolio > h4 {
+    text-align: center;
+}
+.tui{
+    display: flex;
+    align-items: center;
+}
+.portolio-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 950px;
+
+}
+.port{
+    width: 157px;
+height: 116px;
+display: flex;
+
+}
+.port > img{
+    width: 100%;
+    height: 100%;
+}
+
+.port >a {
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #e50019;
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+.port-but > a{
+
+        font-size: 18px;
+        width: 248px;
+      
+    
+}
+.port-but{
+    display: flex;
+    justify-content: end;
+}
+@media (max-width: 1200px){
+    .rst-asd{
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px){
+    .portolio-box,.select-box,.rsp-line{
+        flex-wrap: wrap;
+    }
+    .port{
+        margin-bottom: 10px;
+    }
+    .select-box > select{
+        margin-bottom: 10px;
+    }
+    .resp-data{
+        justify-content: start;
     }
 }

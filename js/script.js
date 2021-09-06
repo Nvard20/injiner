@@ -137,14 +137,10 @@ $("input[type='file']").change(function () {
 $('.tl-box').click(function(){
     $('.tool-down').toggle();
 });
-$('.current-archive div ').on('click', function () {
-
-  
-    $('.current-archive div').removeClass('active-div ') ;
-   $(this).addClass('active-div')
-
-  
+$('.dy').click(function(){
+    $('.dy-box').toggle();
 });
+
 var mySwiper = new Swiper ('.slider-main', {
     // Optional parameters
     direction: 'horizontal',
