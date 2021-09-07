@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">  
+    <link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="preconnect" href="//api-maps.yandex.ru">
     <link rel="dns-prefetch" href="//api-maps.yandex.ru">
 
@@ -201,10 +204,10 @@
                 <a href="#">Мои данные</a>
             </li>
             <li>
-                <a href="#">Мои заказы (8)</a>
+                <a href="order.html">Мои заказы (8)</a>
             </li>
             <li>
-                <a href="#">Мои отклики (1)</a>
+                <a href="my-response.html">Мои отклики (1)</a>
             </li>
             <li>
                 <a href="my-mailings.html">Рассылки</a>
@@ -215,54 +218,49 @@
         </ul>
     </div>
 </div>
-<div class="customer-data">
-    <div class="customer-figure">
-        <div class="fg-img">
-            <div class="chat-img">
-                <img src="img/image_1.png" alt="">
-            </div>
-            <a href="javascript:void(0)">Изменить фото профиля</a>
+<div class="mailings-container">
+  <div class="mailing">
+    <h3>Мои рассылки</h3>
+    <ul class="mail-list">
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-1" class="regular-checkbox
+           big-checkbox"><label for="checkbox-1"></label>
         </div>
-        <div class="customer-info">
-            <div class="option"><span class="name-sait">Имя на сайте:</span> <span>UserName666 </span><a href="#"><img src="img/pen.png" alt=""></a></div>
-            <div class="option opstar">
-                <span class="name-sait">Ф.И.О.: </span> <span>Иванов Иван Иванович </span>
-                <span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a>
-                <div class="op">
-                    Поля, отмеченные *, не видны другим пользователям <a href="#">(изменить)</a>
-                </div>
-            </div>
-            <div class="option"><span class="name-sait">Телефон: </span> <span> +7 915 915 91 15 </span><span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a></div>
-            <div class="option"><span class="name-sait">Почта: </span> <span> iivanov777@bk.ru  </span><span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a></div>
-            <div class="option"><span class="name-sait">Регион или населенный пункт:</span> <span>(пользоватль сам редактирует) </span><a href="#"><img src="img/pen.png" alt=""></a></div>
+        <h5>Ответы на мои комментарии</h5>
 
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-2" class="regular-checkbox
+           big-checkbox" checked><label for="checkbox-2" ></label>
         </div>
+        <h5>Рекомендованные рассылки</h5>
+
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-3" class="regular-checkbox
+           big-checkbox" checked><label for="checkbox-3" ></label>
+        </div>
+        <h5>Прочие уведомления</h5>
+
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-4" class="regular-checkbox
+           big-checkbox"><label for="checkbox-4" ></label>
+        </div>
+        <h5>Модерация отзывов</h5>
+
+      </li>
+    </ul>
+    <div class="popop">
+      <a href="#" class="outline" id="plc-order">Сохранить</a>
+      <a href="#" class="outline" id="cansle">Сбросить по умолчанию</a>
     </div>
-    <div class="change-content">
-        <h3>Изменить пароль:</h3>
-        <form action="" class="change-form">
-            <div class="chpass">
-                <div class="pass">
-                    <p>Введите старый пароль:</p>
-                    <input type="password">
-                </div>
-                <div class="pass">
-                    <p>Введите новый пароль:</p>
-                    <input type="password">
-                </div>
-                <div class="pass">
-                    <p>Повторите новый пароль:</p>
-                    <input type="password">
-                </div>
-            </div>
-            <div class="form-button">
-                <a href="#" class="comein" id="comadd">Сохранить</a>
-                <a href="#" class="cnsl">(Удалить аккаунт)</a>
-            </div>
-        </form>
-    </div>
+  </div>
 </div>
-
 
     <div class="footer">
         <div class="inner-footer">
@@ -779,6 +777,9 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://api-maps.yandex.ru/2.1/?c12d79d2-bdb7-4b87-8d5d-5d82a9ffd9a2&lang=ru_Ru"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
       <script src="js/script.js"></script>
 </body>
 </html>
