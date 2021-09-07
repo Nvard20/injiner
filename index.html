@@ -1072,7 +1072,7 @@
 
 function init_map(cords){
 
-    
+ console.log(cords);
 
  ymaps.ready(function () {
       // Создание экземпляра карты и его привязка к созданному контейнеру.
@@ -17512,12 +17512,19 @@ myMap.controls.add(geolocationControl);
                    var dropdown = document.querySelector('.dropdown-list');
                    dropdown.classList.remove('show');
                    dropdown.innerHTML = '';
+                   console.log(cordinates, 'here');
                    var cord = cordinates.split(' ');
+                   var c = [];
+                   cord.forEach(function(key, value){
+                     c.push(Number(key));
+                   })
+                   var b = c.reverse();
                    var map = document.querySelector('#map');
                    var search = document.querySelector('.reg-search');
                    search.value = '';
                    map.innerHTML = '';
-                   init_map(cord);
+                   map.innerText = '';
+                   init_map(b);
             }
          })
  

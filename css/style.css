@@ -2372,6 +2372,8 @@ opacity: 0.98;
     border-radius: 15px;
     border: 3px dashed #f00;
     padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
@@ -4605,5 +4607,152 @@ text-decoration: none;
     }
     .resp-data{
         justify-content: start;
+    }
+}
+#eraser > img,#clear > img{
+    width: 22px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+
+}
+#painter > p{
+    max-width: 65%;
+
+}
+.colorButtons,.toolsButtons ,.buttonSize,.Storage{
+    display: flex;
+    margin: 0px 2px;
+  align-items: center;
+  width: 100%;
+
+}
+.extra{
+display: flex;
+align-items: end;
+margin-left: 15px;
+cursor: pointer;
+}
+canvas {
+  cursor: crosshair;
+}
+.canvasSize{
+display: none;
+}
+div#sidebar {
+
+  position: absolute;
+left: 0;
+width: 80%;
+padding: 10px;
+z-index: 9;
+display: flex;
+bottom: 0;
+}
+.Storage{
+display: none;
+}
+canvas#canvas {
+  left: 150px;
+  top: 45px;
+}
+
+
+.colorButtons > input,.buttonSize > input {
+  width: 36%;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.toolsButtons .btn {
+  width: 48%;
+}
+
+.sizeButtons .btn {
+  width: 48%;
+}
+.colorButtons > h3,.Storage > h3{
+font-size: 14px;
+}
+.buttonSize > h3,.toolsButtons > h3 {
+font-size: 14px;
+
+}
+
+.colorpicker {
+  background: transparent;
+}
+           #sidebar{
+            justify-content: space-around;
+
+           }
+            #painter{
+            position: relative;
+            }
+            #painter canvas{
+               max-width: 600px !important;
+               left: 0 !important;
+               top: 0 !important;
+               position: relative !important;
+            }
+@media (max-width: 1200px){
+    #painter canvas {
+        max-width: 515px !important;}
+        div#sidebar {
+
+            position: absolute;
+          left: 0;
+          width: 100%;}
+}
+@media (max-width: 1100px){
+    #painter canvas {
+        max-width: 465px !important;}
+}
+@media (max-width: 1000px){
+    div#sidebar {
+ 
+        flex-wrap: wrap;
+        width: 65%;
+
+    }
+    .colorButtons, .toolsButtons, .buttonSize {
+        display: flex;
+        margin: 0px 2px;
+        align-items: center;
+        width: 25%;}
+}
+@media (max-width: 550px){
+    #painter canvas {
+        max-width: 320px !important;
+    }
+    .colorButtons > h3, .Storage > h3 {
+        font-size: 10px;
+    }
+    .buttonSize > h3, .toolsButtons > h3,#saveToImage {
+        font-size: 10px;
+    }
+    .fl > input{
+        width: 0px;
+    }
+}
+.map-aside > div{
+    width: 398px !important;
+    margin-top: 0px !important;
+    
+    }
+@media (max-width: 400px){
+    #painter canvas {
+        max-width: 295px !important;
+    }
+    div#sidebar {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+    .map-aside > div{
+    width: 288px !important;
+    margin-top: 0px !important;
+    
     }
 }
