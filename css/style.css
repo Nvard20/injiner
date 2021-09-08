@@ -2506,7 +2506,7 @@ color: #000a4e;
 height: 211px;
 border-radius: 5px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
-margin-bottom: 22px;
+margin: 22px auto;
 }
 .pitc > img{
     width: 100%;
@@ -2644,7 +2644,7 @@ margin-bottom: 22px;
     max-width: 1450px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: start;
 }
 .inner-primary{
@@ -2789,6 +2789,8 @@ position: relative;
 }
 .primary-container{
     max-width: 950px;
+    margin-right: 40px;
+
 }
 .subscribe > p{
     font-family: Arial;
@@ -3002,7 +3004,7 @@ position: relative;
     margin: auto;
 }
 .msg-box{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
 }
 .msg-tools{
@@ -4161,7 +4163,7 @@ color: #707070;
 
 font-family: "Segoe UI";
 font-weight: bold;
-font-size: 30px;
+font-size: 27px;
 text-align: left;
 color: #000;
 
@@ -4199,9 +4201,20 @@ max-width: 337px;
     max-width: 1400px;
     width: 71%;
 }
+.right-part > h4{
+
+}
 .right-part > h3{
-    font-size: 25px;
-color: #e50019;
+    font-size: 22px;
+    color: #e50019;
+    text-align: right;
+    margin-right: 40px;
+}
+.right-part > h4{
+    text-align: right;
+    margin-right: 40px;
+    font-size: 22px;
+
 }
 h3 > span{
     color: black !important;
@@ -4251,15 +4264,24 @@ margin-top: 0;
 
 }
 .btnset-group > a{
-    width: 30px;
-    height: 35px;
+ 
     display: flex;
     margin-right: 20px;
     align-items: center;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+    color: #2a3a59;
+    text-decoration: none;
 
 }
+
 .btnset-group > a > img{
-    width: 100%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+
 }
 .btnset-group{
     display: flex;
@@ -4711,6 +4733,9 @@ font-size: 14px;
         max-width: 465px !important;}
 }
 @media (max-width: 1000px){
+    .primary-container{
+        margin-right: 0;
+    }
     div#sidebar {
  
         flex-wrap: wrap;
@@ -4742,7 +4767,7 @@ font-size: 14px;
     margin-top: 0px !important;
     
     }
-@media (max-width: 400px){
+@media (max-width: 450px){
     #painter canvas {
         max-width: 295px !important;
     }
@@ -4941,4 +4966,230 @@ display: block;
     .byuje{
         flex-wrap: wrap;
     }
+}
+@media (max-width: 1400px){
+    .btnset-group > a {
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+        font-family: Arial;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: center;
+        color: #2a3a59;
+        text-decoration: none;
+    }
+}
+@media (max-width: 1400px){
+    .btnset-group > a > span{
+        display: none;
+    }
+
+}
+@media (max-width: 1100px){
+    .setting-buttons{
+        flex-wrap: wrap;
+    }
+}
+.task-container{
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+padding: 20px;
+position: relative;
+margin-bottom: 20px;
+
+}
+.task-container > h2{
+    font-family: Arial;
+font-weight: normal;
+font-size: 30px;
+text-align: center;
+color: #000;
+margin-top: 20px;
+
+}
+.task-container > p{
+    font-family: Arial;
+font-weight: normal;
+font-size: 20px;
+text-align: center;
+color: #000;
+
+}
+.task-container > p > a{
+    color: #e50019;
+}
+.perf-img{
+    width: 156px;
+height: 148px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+}
+.perf-img > img{
+    width: 100%;
+    height: 100%;
+}
+.performer-container{
+    margin-top: 30px;
+
+}
+.performer-container > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: left;
+color: #e50019;
+
+}
+.perform > a{
+    font-family: "Segoe UI";
+font-weight: normal;
+text-decoration: underline;
+font-size: 20px;
+text-align: left;
+color: #e50019;
+
+}
+.perf{
+    display: flex;
+    align-items: center;
+}
+.perf-content > h2{
+    font-family: "Segoe UI";
+font-weight: bold;
+font-size: 35px;
+text-align: left;
+color: #000;
+
+}
+.perf-content > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 23px;
+text-align: left;
+color: #000;
+
+}
+.perform{
+    margin-right: 20px;
+
+}
+.perf-item > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #000;
+margin: 5px 0;
+
+}
+.perf-item{
+    max-width: 319px;
+}
+.perf-item > input{
+    border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+border: none;
+
+padding: 15px 10px;
+width: 100%;
+}
+.form-perform{
+    display: flex;
+    max-width: 640px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.ui{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #000;
+
+}
+.prd{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 16px;
+text-align: left;
+color: #000;
+max-width: 640px;
+    margin: auto;
+}
+.comm{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: left;
+color: #e50019;
+
+}
+@media (max-width:767px){
+    .perf {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .perf-content > p {
+        font-family: "Segoe UI";
+        font-weight: normal;
+        font-size: 17px;}
+        .perf-content > h2 {
+          
+            font-size: 27px;}
+            .task-container > h2 {
+                font-family: Arial;
+                font-weight: normal;
+                font-size: 27px;}
+    
+}
+.prfbutton{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+}
+@media (max-width: 500px){
+    .task-container{
+        padding: 0px;
+
+    }
+    .task-container > h2{
+        padding-top: 30px;
+
+    }
+    .performer-container > p{
+        text-align: center;
+
+    }
+    .perf {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .perform {
+        margin-right: 0px;
+    }
+    
+
+.form-perform {
+    display: flex;
+    max-width: 640px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+.prfbutton{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
 }
