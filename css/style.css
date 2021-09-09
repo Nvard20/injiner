@@ -1964,7 +1964,7 @@ margin-top: 20px;
     margin-left: 8px;
 }
 .prev-div{
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
     padding: 0 20px;
 
@@ -4295,7 +4295,7 @@ margin-top: 0;
 }
 .topSetting{
     max-width: 1424px;
-
+    margin: auto;
 }
 .current-archive > div{
     cursor: pointer;
@@ -5192,4 +5192,252 @@ color: #e50019;
     flex-direction: column;
     padding-bottom: 20px;
 }
+}
+.card-container{
+    margin-top: 160px;
+    margin-bottom: 20px;
+}
+.card-container > h2{
+    text-align: center;
+    font-family: Arial;
+font-weight: normal;
+font-size: 32px;
+color: #2a3a59;
+border-bottom: 2px solid red;
+    max-width: 555px;
+    margin: auto;
+}
+.content-card{
+    max-width: 1306px;
+    margin:30px auto;
+
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
+}
+.top-card > h4{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 32px;
+text-align: left;
+color: #2a3a59;
+
+}
+.month-seen > p{
+font-family: Arial;
+font-weight: normal;
+font-size: 24px;
+text-align: right;
+
+
+}
+.month-seen > p:first-child{
+    color: #2a3a59;
+    opacity: 0.43;
+}
+.card-img{
+    width: 136px;
+height: 118px;
+border-radius: 16px;
+background: #fff;
+border: 1px solid #707070;
+align-items: center;
+margin-right: 15px;
+
+}
+.card-box{
+    display: flex;
+}
+.card-img > img{
+    width: 77px;
+    height: 77px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usname > p{
+    font-family: Arial;
+font-weight: normal;
+font-size: 32px;
+text-align: left;
+color: #000;
+
+}
+.usname{
+    position: relative;
+    margin-right: 85px;
+
+}
+.point{
+    width: 14px;
+    height: 14px;
+    background: #19c98d;
+    border: 1px solid #16ad7a;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+.count-card > p{
+    font-family: "Segoe UI";
+font-weight: 600;
+font-size: 25px;
+text-align: left;
+
+}
+.card-status > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #e50019;
+
+}
+.acr{
+    flex-direction: column;
+    align-items: self-end;
+}
+.card-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: -45px;
+}
+.acr > a{
+    margin-bottom: 3px;
+
+}
+.card-map{
+    max-width: 1306px;
+    height: 387px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+.card-map > #map-card{
+    width: 100% !important;
+    height: 100%;
+}
+.cts > p,.trkal > p{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 20px;
+text-align: left;
+color: #707070;
+
+}
+.trkal > p{
+    margin-left: 20px;
+}
+.trkal{
+    display: flex;
+    align-items: center;
+}
+.cts{
+    max-width: 1306px;
+    margin: auto;
+}
+.cts > h6{
+    font-family: Arial;
+font-weight: normal;
+font-size: 21px;
+text-align: left;
+color: #000;
+max-width: 758px;
+}
+.slider-card{
+    max-width: 1366px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.prek{
+    max-width: 1306px;
+    margin: auto;
+}
+.card-task{
+    max-width: 1396px;
+background: #fff;
+filter: drop-shadow(2px 4px 15px rgba(0, 0, 0, 0.16));
+margin: auto;
+padding: 20px;
+}
+.head-title-card{
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+.head-title-card > h2 {
+    max-width: 500px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    color: #2a3a59;
+    background: white;
+    margin: auto;
+}
+.line-card {
+    top: 29px;
+    width: 100%;
+    height: 2px;
+    background: #e50019;
+    position: absolute;
+    z-index: -8;
+}
+.card-task > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 24px;
+text-align: center;
+opacity: 0.77;
+
+}
+.card-task > h6{
+    font-family: Arial;
+font-weight: normal;
+font-size: 24px;
+color: #e50019;
+
+}
+.photobox{
+    width: 145px;
+height: 221px;
+border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+
+}
+.inner-photo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.inner-photo > input{
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.component-items{
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+}
+.component-1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.choose{
+    max-width: 300px;
+}
+.choose > div{
+    align-items: flex-start;
 }

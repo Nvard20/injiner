@@ -141,7 +141,7 @@ $('.dy').click(function(){
     $('.dy-box').toggle();
 });
 
-var mySwiper = new Swiper ('.slider-main', {
+var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
