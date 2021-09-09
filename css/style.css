@@ -2975,7 +2975,6 @@ margin-right: 10px;
     max-width: 800px;
     margin: auto;
     margin-top: 20px;
-    height: 220px;
 }
 .msg-box > textarea{
     width: 100%;
@@ -2984,7 +2983,7 @@ font-weight: normal;
 font-size: 26px;
 text-align: left;
 color: #707070;
-height: 100%;
+height: 220px;
 padding: 20px;
 
 }
@@ -3003,10 +3002,7 @@ position: relative;
     height: 37px;
     margin: auto;
 }
-.msg-box{
-    margin-bottom: 40px;
 
-}
 .msg-tools{
     display: flex;
 
@@ -5406,7 +5402,7 @@ color: #e50019;
 }
 .photobox{
     width: 145px;
-height: 221px;
+height: 180px;
 border-radius: 5px;
 background: #fff;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
@@ -5433,6 +5429,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
 .component-1{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 
 }
 .choose{
@@ -5440,4 +5437,124 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
 }
 .choose > div{
     align-items: flex-start;
+}
+.choose-list > h5{
+    margin-top: -6px;
+
+}
+.atkllik-content{
+    max-width: 1366px;
+    margin: auto;
+}
+.card-msg {
+    max-width: 1350px;
+    margin: auto;
+    margin-top: 0px;
+    height: unset !important;
+}
+.card-msg > textarea{
+    height: 164px;
+
+}
+.card-msg > .filetext{
+    width: 100%;
+}
+.compile-task{
+    max-width: 1400px;
+    margin: auto;
+    border-radius: 10px;
+background: #fff;
+box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.16);
+position: relative;
+padding: 20px;
+margin-top: 20px;
+}
+.compile-task > h3{
+    font-family: Arial;
+font-weight: normal;
+font-size: 32px;
+text-align: center;
+color: #000;
+
+}
+.card-list{
+    margin-bottom: 20px;
+}
+@media (max-width: 1300px){
+    .component-1 {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+  
+    .choose{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1000px){
+    .component-items{
+        justify-content: start;
+    }
+    .content-card {
+        max-width: 1306px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    .cts{
+        padding: 0 15px;
+
+    }
+    .card-map{
+        box-shadow: unset;
+    }
+    .prek{
+        padding: 0 17px;
+
+    }
+}
+@media (max-width: 767px){
+    .card-box {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+
+    }
+    .acr {
+        flex-direction: row;
+        align-items: unset;
+    }
+    .top-card{
+        flex-direction: column;
+        align-items: start;
+
+    }
+    .month-seen > p {
+        font-size: 20px;
+        text-align: left;
+    }
+    .usname{
+        margin-top: 10px;
+    }
+ .card-status{
+    margin-top: 0px;
+
+ }
+    .count-card > p {
+        font-size: 15px;
+    }
+    
+    .usname > p{
+        font-size: 25px;
+    }
+    .top-card > h4 {
+        font-family: "Segoe UI";
+        font-weight: normal;
+        font-size: 29px;
+    }
+   
+.cardbtn{
+    width: 100%;
+    margin: unset;
+    flex-direction: column;
+
+}
 }
