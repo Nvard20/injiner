@@ -140,6 +140,9 @@ $('.tl-box').click(function(){
 $('.dy').click(function(){
     $('.dy-box').toggle();
 });
+$('#otmenit').click(function(){
+    $('#id10').show()
+})
 
 var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters

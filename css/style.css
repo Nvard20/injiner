@@ -4107,7 +4107,7 @@ justify-content: center;
 margin-top: 20px;
 margin-bottom: 40px;
 }
-.current-archive > div{
+.current-archive > a{
 margin-right: 15px;
 }
 .archive-product{
@@ -4293,8 +4293,10 @@ margin-top: 0;
     max-width: 1424px;
     margin: auto;
 }
-.current-archive > div{
+.current-archive > a{
     cursor: pointer;
+    color: #2a3a59;
+    text-decoration: none;
 }
 .active-div{
     padding-bottom: 2px;
@@ -5653,4 +5655,60 @@ color: #000;
         width: 94%;
         margin-right: 0px;
     }
+}
+#id10{
+    display: none;
+    margin-top: 40px;
+
+}
+.politics-container{
+    max-width: 1519px;
+border-radius: 28px;
+background: #fff;
+box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.35);
+margin: auto;
+margin-top: 162px;
+position: relative;
+padding: 50px;
+}
+.politics-container > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 20px;
+text-align: left;
+color: #000;
+
+}
+.faq-page-2{
+    max-width: 1640px;
+border-radius: 15px;
+background: #fff;
+box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.16);
+margin: auto;
+padding: 30px;
+margin-top: 160px;
+
+}
+.faqcontent{
+    max-width: 1000px;
+    margin: auto;
+}
+.faqcontent > h2{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 35px;
+text-align: center;
+color: #2a3a59;
+border-bottom: 2px solid #e50019;
+max-width: 800px;
+margin: 20px auto;
+
+}
+.faqcontent > p{
+font-family: Arial;
+font-weight: normal;
+font-size: 25px;
+line-height: 58px;
+text-align: left;
+
 }
