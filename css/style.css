@@ -5569,8 +5569,10 @@ color: #000;
 .form-item{
     position: relative;
 }
-.form-item > img{
+.item-plus> img{
     position: absolute;
+    right: 0;
+
 }
 .form-item > h6{
     font-family: "Segoe UI";
@@ -5598,6 +5600,23 @@ margin: auto;
 .item-plus > input{
     width: 94%;
     margin-right: 18px;
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 16%);
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    opacity: 0.54;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+}
+.item-plus{
+    display: flex;
+    align-items: center;
 }
 .form-item > textarea{
     width: 100%;
@@ -5629,7 +5648,6 @@ color: #000;
 @media (max-width:767px){
     .form-item > img {
         position: absolute;
-        top: 74px;
     }
     .item-plus > input {
         width: 94%;
