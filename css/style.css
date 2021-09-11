@@ -5712,3 +5712,62 @@ line-height: 58px;
 text-align: left;
 
 }
+.chat-img > p{
+    font-size: 12px;
+    color: #e50019;
+    text-decoration: underline;
+}
+.data-firm {
+    max-width: 1258px;
+    margin: auto;
+}
+.firm-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.firm-item > h6,.firm-item-another > h6{
+    font-family: "Segoe UI";
+font-weight: bold;
+font-size: 26px;
+text-align: left !important;
+max-width: unset;
+}
+.firm-item > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 26px;
+text-align: left;
+color: #000;
+
+}
+.firm-item-another{
+    margin-top: 20px;  
+  max-width: 965px;
+
+
+}
+.firm-item-another > textarea{
+    max-width: 965px;
+height: 246px;
+border-radius: 5px;
+background: #fff;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+margin-top: 10px;
+font-family: Arial;
+font-weight: normal;
+font-size: 25px;
+text-align: left;
+color: #5e5555;
+padding: 20px;
+}
+.del-acount{
+    font-family: Arial;
+font-weight: normal;
+text-decoration: underline;
+font-size: 30px;
+text-align: left;
+color: #f00;
+
+}
