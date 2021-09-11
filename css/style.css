@@ -5771,3 +5771,14 @@ text-align: left;
 color: #f00;
 
 }
+@media (max-width: 600px){
+    .firm-item {
+    
+        flex-direction: column;
+        align-items: start;
+    }
+}
+#photo-ch{
+    display: none;
+    margin-top: 100px;
+}

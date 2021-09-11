@@ -142,7 +142,10 @@ $('.dy').click(function(){
 });
 $('#otmenit').click(function(){
     $('#id10').show()
-})
+});
+$('.change_img').click(function(){
+    $('#photo-ch').show();
+});
 
 var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters
