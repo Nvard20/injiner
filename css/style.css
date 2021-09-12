@@ -4725,8 +4725,7 @@ font-size: 14px;
                height: 100%;
             }
 @media (max-width: 1200px){
-    /* #painter canvas {
-        max-width: 515px !important;} */
+
     
         div#sidebar {
 
@@ -4958,7 +4957,6 @@ color: #9f9f9f;
 font-weight: normal;
 font-size: 24px;
 text-align: center;
-color: #2a3a59;
 display: flex;
 justify-content: center;
 margin: 20px 0;
@@ -4967,6 +4965,8 @@ margin: 20px 0;
     text-decoration-color: #e50019 !important;
     padding: 10px 0;
 display: block;
+color: #000;
+
 }
 @media (max-width: 500px){
     .byuje{
@@ -5501,6 +5501,10 @@ color: #000;
     }
 }
 @media (max-width: 1000px){
+    .chat-img{
+        margin-bottom: 20px;
+
+    }
     .component-items{
         justify-content: start;
     }
@@ -5792,4 +5796,57 @@ color: #f00;
 }
 input[type='range']{
     width: 100%;
+}
+.gr{
+    color: gray;
+
+}
+.tmbtn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.df{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    width: 315.48px;
+    border-radius: 5px;
+    color: #e50019;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 4px 0px;
+    transition: .2s;
+    border: 2px solid;
+}
+@media (max-width: 500px){
+    .current-archive{
+        flex-direction: column;
+
+    }
+}
+.grn{
+    color: #25b92f !important;
+
+}
+.revs-vip{
+    margin-top: 10px;
+
+}
+.revs-vip > p{
+    font-family: "Segoe UI";
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+color: #000;
+
+}
+.edit-control{
+    display: flex;
+    justify-content: end;
 }
