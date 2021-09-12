@@ -5850,3 +5850,46 @@ color: #000;
     display: flex;
     justify-content: end;
 }
+.all-photos{
+    display: flex;
+    justify-content: space-around;
+}
+.phtbox{
+    width: 268px;
+height: 264px;
+border-radius: 13px;
+background: #70ffff;
+border: 1px solid #707070;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.phtbox > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+
+}
+.white{
+    background-color: white;
+}
+.phtbox > p{
+    font-family: "Segoe UI";
+font-weight: bold;
+font-size: 32px;
+text-align: center;
+color: #3471e6;
+
+}
+.icon{
+    cursor: pointer;
+}
+@media (max-width:850px){
+    .all-photos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .phtbox{
+        margin-bottom: 10px;
+    }
+}
