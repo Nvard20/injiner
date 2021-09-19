@@ -3669,7 +3669,18 @@ margin-right: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
     position: relative;
     padding: 3px 10px;
+    display: flex;
 
+
+ }
+ .cust > img{
+    display: flex;
+    width: 14px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-right: 4px;
  }
  .cust > input{
      border: none;
@@ -3743,6 +3754,7 @@ padding:20px;
 .bot{
     max-width: 1173px;
     width: 100%;
+    margin-left: 20px;
 
 }
 .chat-bot{
@@ -3979,7 +3991,8 @@ padding: 20px 10px;
 background: #fff;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
 padding: 20px;
-margin: 30px 0;
+margin: 30px auto;
+max-width: 1606px;
 }
 .customer-figure{
     max-width: 1258px;
@@ -4456,6 +4469,8 @@ margin: auto;
     display: flex;
     max-width: 1200px;
     margin: 20px auto;
+    justify-content: center;
+
 }
 .select-box > select{
     margin-right: 30px;
@@ -4513,7 +4528,7 @@ font-weight: normal;
 font-size: 24px;
 text-align: left;
 color: #000;
-
+position: relative;
 }
 .rsp-line{
     display: flex;
@@ -5997,4 +6012,82 @@ text-align: left;
     .fgh{
         width: 200px;
     }
+}
+.pocht > div > a{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #2a3a59;
+    text-decoration: unset;
+}
+.opresp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.dataotk{
+    font-family: "Segoe UI";
+    font-weight: normal;
+    color: #000;
+
+}
+.active{
+    
+    border-bottom: 2px solid #e50019;
+
+}
+#customer-data{
+    display: none;
+}
+#myorder-data{
+    display: none;
+}
+.main-data{
+    margin: 0 20px;
+
+}
+@media (max-width: 1000px){
+   .bot{
+    margin-left: 0px;
+    margin-top: 20px;
+   }
+   .customer-search{
+    width: 100%;
+    max-width: unset;
+   }
+   .parametrs > ul > li{
+    margin-right: 10px;
+
+   }
+   .parametrs > ul > li > a {
+    white-space: nowrap;
+    font-size: 18px;
+}
+.option{
+    font-size: 16px;
+
+}
+.looks-set{
+    font-size: 18px;
+}
+}
+@media (max-width: 350px){
+    .customer-search{
+        padding: 10px;
+
+    }
+}
+.tech-2{
+    display: none;
+}
+#myresponse-data{
+    display: none;
+}
+#mailcontainer{
+    display: none;
+}
+#favorite-data{
+    display: none;
 }

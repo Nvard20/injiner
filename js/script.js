@@ -146,7 +146,92 @@ $('#otmenit').click(function(){
 $('.change_img').click(function(){
     $('#photo-ch').show();
 });
+$('.parametrs-link ').on('click', function () {
 
+  
+    $('.parametrs-link ').removeClass('active ') ;
+   $(this).addClass('active')
+
+  
+});
+$('.active-div ').on('click', function () {
+
+  
+    $('.active-div ').removeClass('active ') ;
+   $(this).addClass('active')
+
+  
+});
+$('#customer').click(function(){
+    $('#customer-data').show();
+    $('#myorder-data').hide();
+    $('#chat-data').hide();
+    $('#myresponse-data').hide();
+    $('#mailcontainer').hide();
+    $('#favorite-data').hide();
+
+});
+$('#chat').click(function(){
+    $('#chat-data').show();
+    $('#myorder-data').hide();
+
+    $('#customer-data').hide();
+    $('#myresponse-data').hide();
+    $('#mailcontainer').hide();
+    $('#favorite-data').hide();
+
+});
+$('#my-order').click(function(){
+    $('#customer-data').hide();
+
+    $('#chat-data').hide();
+    $('#myorder-data').show();
+    $('#myresponse-data').hide();
+    $('#mailcontainer').hide();
+    $('#favorite-data').hide();
+
+
+});
+$('#my-response').click(function(){
+    $('#customer-data').hide();
+
+    $('#chat-data').hide();
+    $('#myorder-data').hide();
+    $('#mailcontainer').hide();
+
+ $('#myresponse-data').show();
+ $('#favorite-data').hide();
+
+});
+$('#my-mailings').click(function(){
+    $('#customer-data').hide();
+
+    $('#chat-data').hide();
+    $('#myorder-data').hide();
+ $('#myresponse-data').hide();
+ $('#favorite-data').hide();
+
+$('#mailcontainer').show();
+});
+$('#favoirites').click(function(){
+    $('#customer-data').hide();
+
+    $('#chat-data').hide();
+    $('#myorder-data').hide();
+ $('#myresponse-data').hide();
+$('#mailcontainer').hide();
+$('#favorite-data').show();
+});
+$('#ordertek').click(function(){
+    $('.tech-2').hide();
+    $('.tech-1').show();
+
+});
+$('#myorder').click(function(){
+    $('.tech-1').hide();
+    $('.tech-2').show();
+
+})
 var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters
     direction: 'horizontal',
