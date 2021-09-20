@@ -179,7 +179,7 @@ $('#chat').click(function(){
     $('#myresponse-data').hide();
     $('#mailcontainer').hide();
     $('#favorite-data').hide();
-
+    $('#perf-done').hide();
 });
 $('#my-order').click(function(){
     $('#customer-data').hide();
@@ -201,7 +201,8 @@ $('#my-response').click(function(){
 
  $('#myresponse-data').show();
  $('#favorite-data').hide();
-
+$('#work-container').hide();
+$('#perf-done').hide();
 });
 $('#my-mailings').click(function(){
     $('#customer-data').hide();
@@ -222,9 +223,46 @@ $('#favoirites').click(function(){
 $('#mailcontainer').hide();
 $('#favorite-data').show();
 });
+$('#custperform').click(function(){
+    $('#perf-done').show();
+    $('#work-container').hide();
+
+    $('#chat-data').hide();
+//     $('#myorder-data').hide();
+ $('#myresponse-data').hide();
+// $('#mailcontainer').hide();
+// $('#favorite-data').show();
+});
+$('#mywork').click(function(){
+    $('#perf-done').hide();
+
+    $('#chat-data').hide();
+    $('#work-container').show();
+//     $('#myorder-data').hide();
+ $('#myresponse-data').hide();
+// $('#mailcontainer').hide();
+// $('#favorite-data').show();
+});
 $('#ordertek').click(function(){
     $('.tech-2').hide();
     $('.tech-1').show();
+
+});
+$('#vip').click(function(){
+    $('#worktek').hide();
+    $('#workvip').show();
+    $('#workphoto').hide();
+});
+$('#tek').click(function(){
+    $('#worktek').show();
+    $('#workvip').hide();
+    $('#workphoto').hide();
+
+});
+$('#ph').click(function(){
+    $('#worktek').hide();
+    $('#workvip').hide();
+    $('#workphoto').show();
 
 });
 $('#myorder').click(function(){

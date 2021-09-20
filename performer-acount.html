@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/style.css">  
-    <link rel="preconnect" href="//api-maps.yandex.ru">
-    <link rel="dns-prefetch" href="//api-maps.yandex.ru">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="preconnect" href="//api-maps.yandex.ru">
+  <link rel="dns-prefetch" href="//api-maps.yandex.ru">
+  <link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen"/>
+  <script src="magiczoomplus/magiczoomplus.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
   <header class="header">
@@ -169,7 +171,8 @@
        
     </div>
 </header>
-<div class="chats">
+<div class="main-data">
+  <div class="chats">
     <div class="chat-container">
         <div class="chat-img">
             <img src="img/image_22.png" alt="">
@@ -188,56 +191,680 @@
        
             <div class="pocht">
                 <div><img src="img/msg.png" alt=""><a href="#"> 1 новое собщение</a></div>
-                <div><img src="img/kk.png" alt=""> <a href="#">нет новых поступлений</a></div>
+                <div><img src="img/kk.png" alt=""> <a href="#"> 1 новое собщение</a></div>
     
             </div>
         </div>
     </div>
     <div class="parametrs">
-        <ul>
-            <li>
-                <a href="chat.html">Чат</a>
-            </li>
-            <li>
-                <a href="customer-data.html">Мои данные</a>
-            </li>
-            <li>
-                <a href="my-order.html">Мои заказы (8)</a>
-            </li>
-            <li>
-                <a href="my-response.html">Мои отклики (1)</a>
-            </li>
-            <li>
-                <a href="my-mailings.html">Рассылки</a>
-            </li>
-            <li>
-                <a href="favorities.html">Избранное (85)</a>
-            </li>
-        </ul>
+      <ul>
+          <li>
+              <a href="javascript:void(0)" class="active parametrs-link" id="chat">Чат</a>
+          </li>
+          <li>
+              <a href="javascript:void(0)" class=" parametrs-link" id="custperform">Мои данные</a>
+          </li>
+          <li>
+              <a href="javascript:void(0)" class=" parametrs-link" id="mywork">Мои работы (8)</a>
+          </li>
+          <li>
+              <a href="javascript:void(0)" class=" parametrs-link" id="my-response">Мои отклики (1)</a>
+          </li>
+          <li>
+              <a href="javascript:void(0)" class=" parametrs-link" id="my-mailings">Рассылки</a>
+          </li>
+          <li>
+              <a href="javascript:void(0)" class=" parametrs-link" id="favoirites">Избранное (85)</a>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="customer-content" id="chat-data">
+  <div class="customer-search">
+    <div class="cust">
+      <img src="img/Icon map-search.png" alt="">
+      <input type="text" placeholder="Поиск">
+    </div>
+    <div class="user-info">
+      <div class="user-box">
+        <div class="user-img"></div>
+        <div class="user-content">
+          <h5>Контакт 1</h5>
+          <p>Обрывок переписки...</p>
+        </div>
+      </div>
+      <div class="user-box">
+        <div class="user-img"><img src="img/image_22.png" alt=""></div>
+        <div class="user-content">
+          <h5>Контакт 1</h5>
+          <p>Обрывок переписки...</p>
+        </div>
+      </div>
+      <div class="user-box">
+        <div class="user-img"><img src="img/image_22.png" alt=""></div>
+        <div class="user-content">
+          <h5>Контакт 1</h5>
+          <p>Обрывок переписки...</p>
+        </div>
+      </div>
+      <div class="user-box">
+        <div class="user-img"><img src="img/image_22.png" alt=""></div>
+        <div class="user-content">
+          <h5>Контакт 1</h5>
+          <p>Обрывок переписки...</p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <div class="bot">
+    <div class="customer-table">
+      <div class="chat-container">
+        <div class="chat-img">
+            <img src="img/image_1.png" alt="">
+        </div>
+        <div class="chat-content">
+            <div class="pocht-txt">
+                <div class="pocht">
+                    <h4>Сделать по фото 3д модель барельефа</h4>
+                </div>
+                <span class="blue">Личный кабинет/Мои заказы/Заказ №230665</span><br>
+                <span>размещен 26 марта 11:58</span>
+                <div class="attendance">
+                  <div class="att">
+                    <h5>Услуги</h5>
+                    <p>1. Сделать по фото 3Д-модель барельефа </p>
+                     <p> 2. Напечатать 3Д-модель</p>
+                  </div>
+                  <div class="att">
+                    <h5>Срок</h5>
+                    <p>как можно быстрее</p>
+                  </div>
+                  <div class="att">
+                    <h5>Стоимость</h5>
+                    <p class="red">3000 руб.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-bot">
+      <h4>Чат с Контакт 3</h4>
+      <div class="user-chat-bot">
+        <div class="user-bot">
+          <div class="us-img">
+            <img src="img/image_22.png" alt="">
+          </div>
+          <div class="us-sms">
+          
+            <p>Текст сообщения Текст сообщения  </p>
+            
+            <span>10:30</span>
+          </div>
+       
+        </div>
+        
+      </div>
+   
+      <div class="chat-date">
+        <div class="ch-date">Ноябрь, 27</div>
+        <div class="ch-line"></div>
+      </div>
+      <div class="user-chat-bot">
+        <div class="user-bot">
+          <div class="us-img">
+            <img src="img/image_22.png" alt="">
+          </div>
+          <div class="us-sms">
+          
+            <p>Текст сообщения  </p>
+            
+            <span>10:30</span>
+          </div>
+       
+        </div>
+        <div class="user-bot user-bot-2">
+        
+          <div class="us-sms">
+          
+            
+            <p> Текст сообщения</p>
+            <span>10:30</span>
+           
+          </div>
+          <div class="us-img us-img-2">
+            <img src="img/intersection_7.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="text-sms">
+        <div class="structure">
+          <div class="st-file">
+            <img src="img/file.png" alt="">
+            <input type="file">
+          </div>
+ 
+          <input type="text" placeholder="Текст сообщения">
+          <button class="btn-sms"><img src="img/group_12.png" alt=""></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+</div>
+<div class="customer-data" id="perf-done">
+    <div class="customer-figure">
+        <div class="fg-img">
+            <div class="chat-img">
+                <img src="img/image_1.png" alt="">
+            </div>
+            <a href="javascript:void(0)" class="change_img">Изменить фото профиля</a>
+        </div>
+        <div class="customer-info">
+            <div class="option"><span class="name-sait">Имя на сайте:</span> <span>UserName666 </span><a href="#"><img src="img/pen.png" alt=""></a></div>
+            <div class="option opstar">
+                <span class="name-sait">Ф.И.О.: </span> <span>Иванов Иван Иванович </span>
+                <span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a>
+                <div class="op">
+                    Поля, отмеченные *, не видны другим пользователям <a href="#">(изменить)</a>
+                </div>
+            </div>
+            <div class="option"><span class="name-sait">Телефон: </span> <span> +7 915 915 91 15 </span><span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a></div>
+            <div class="option"><span class="name-sait">Почта: </span> <span> iivanov777@bk.ru  </span><span class="star">* </span><a href="#"><img src="img/pen.png" alt=""></a></div>
+
+        </div>
+    </div>
+    <div class="change-content">
+        <h3>Изменить пароль:</h3>
+        <form action="" class="change-form">
+            <div class="chpass">
+                <div class="pass">
+                    <p>Введите старый пароль:</p>
+                    <input type="password">
+                </div>
+                <div class="pass">
+                    <p>Введите новый пароль:</p>
+                    <input type="password">
+                </div>
+                <div class="pass">
+                    <p>Повторите новый пароль:</p>
+                    <input type="password">
+                </div>
+            </div>
+            <div class="form-button">
+                <a href="#" class="comein" id="comadd">Сохранить</a>
+                <a href="#" class="cnsl">(Удалить аккаунт)</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="data-firm">
+        <div class="firm-item">
+            <h6 class="opstar">Наименование организации <span class="star">*</span>
+                <p class="op">              
+                    Поля, отмеченные *, обязательны к заполнению
+                </p>
+            </h6>
+            <p>ООО "Счастливая подкова"</p>
+        
+        </div>
+        <div class="firm-item">
+            <h6>ИНН <span class="star">*</span></h6>
+            <p>1234567890</p>
+        </div>
+        <div class="firm-item">
+            <h6>Регион, в котором оказываются услуги <span class="star">*</span></h6>
+            <p>Московская область <a href="#"><img src="img/pen.png" alt=""></a> (может быть несколько регионов)</p>
+        </div>
+        <div class="firm-item">
+            <h6>Адрес офиса (город, улица, дом) <span class="star">*</span></h6>
+            <p>д. Огаевка, ул. Ленинская, д.12 <a href="#"><img src="img/pen.png" alt=""></a> </p>
+        </div>
+        <div class="form-item firm-item-another">
+            <p>Спектр охватываемых категорий</p>
+            <div class="chekserv">
+              <div class="list-filter ml">
+                <div class="demo2">
+                  <input type="checkbox" id="checkbox-1" class="regular-checkbox
+                   big-checkbox" checked=""><label for="checkbox-1"></label>
+                </div>
+                <h5>3D-печать</h5>
+        
+              </div>
+              <div class="list-filter ml">
+                <div class="demo2">
+                  <input type="checkbox" id="checkbox-2" class="regular-checkbox
+                   big-checkbox"><label for="checkbox-2"></label>
+                </div>
+                <h5>3D-моделирование</h5>
+        
+              </div>
+              <div class="list-filter ml">
+                <div class="demo2">
+                  <input type="checkbox" id="checkbox-3" class="regular-checkbox
+                   big-checkbox"><label for="checkbox-3"></label>
+                </div>
+                <h5>3D-сканирование</h5>
+        
+              </div>
+              <div class="list-filter ml">
+                <div class="demo2">
+                  <input type="checkbox" id="checkbox-1-4" class="regular-checkbox
+                   big-checkbox"><label for="checkbox-1-4"></label>
+                </div>
+                <h5>Визуализация</h5>
+        
+              </div>
+              <div class="list-filter ml">
+                <div class="demo2">
+                  <input type="checkbox" id="checkbox-1-5" class="regular-checkbox
+                   big-checkbox" checked=""><label for="checkbox-1-5"></label>
+                </div>
+                <h5>Макетирование</h5>
+        
+              </div>
+            </div>
+          </div>
+          <div class="form-item firm-item-another">
+            <div>Если услуг, которые оказывает ваша фирма нет в списке, <br>
+                то напишите их ниже. Мы добавим их в перечень предоставляемых услуг</div>
+            <div class="item-plus">
+              <input type="text" placeholder="">
+              <img src="img/plus-6-32.png" alt="">
+            </div>
+           
+        </div>
+        <div class="firm-item firm-item-another">
+            <h6>Контактный телефон для заказчиков <span class="star">*</span> </h6>
+            <p>+7-495-555-55-55 <a href="#"><img src="img/pen.png" alt=""></a></p>
+        </div>
+        <div class="firm-item firm-item-another">
+            <h6>Контактный e-mail для заказчиков <span class="star">*</span> </h6>
+            <p>pochta@pochta.ru <a href="#"><img src="img/pen.png" alt=""></a></p>
+        </div>
+        <div class="firm-item firm-item-another">
+            <h6>Адрес сайта <span class="star">*</span> </h6>
+            <p>www.sait.ru<a href="#"><img src="img/pen.png" alt=""></a></p>
+        </div>
+        <div class="form-item firm-item-another">
+            <h6>
+                Краткая информация о предприятии
+                <a href="#"><img src="img/black-pen.png" alt=""></a>
+            </h6>
+            <textarea >Компания выпускает котелки и поварешки</textarea>
+        </div>
+        <div class="firm-item-another">
+            <a href="#" class="del-acount">Удалить аккаунт</a>
+        </div>
     </div>
 </div>
-<div class="current-archive">
-    <a class="active-div" href="work-tek.html">Текущие</a>
-    <a class="active-div" href="work-vip.html">Выполненные </a>
-    <a class="active-div" href="work-photo.html">Фотогалерея </a>
+<div id="work-container">
+  <div class="current-archive">
+    <a class="active-div active" href="javascript:void(0)" id="tek">Текущие</a>
+    <a class="active-div" href="javascript:void(0)" id="vip">Выполненные </a>
+    <a class="active-div" href="javascript:void(0)" id='ph'>Фотогалерея </a>
+  </div>
+  <div id="worktek">
 
+  <div class="zakaz">
+      Заказ №5617
+  </div>
+  <div class="analisis">
+      <div class="analisis-top">
+          <div class="tp-1">
+              <p class="gr">Опубликовано: 19 июня 2020</p>
+          </div>
+          <div class="tp-2 red">Статус: размещен на сайте</div>
+      </div>
+      <div class="analis-content">
+          <h3>Начертить курсовой проект</h3>
+          <p>
+              Начертить курсовой проект третьего курса МГТУ им. Н.Э. Баумана ещё какой-нибудь текст
+              что обычно пишут понятия не имею весной 1982 года я шёл по улице Ясеневой в городе
+              Пермь и наступил левым ботинком в лужу
+          </p>
+          <div class="byuje">
+              <div class="byuje-1">Бюджет: <span class="red">2000 руб.</span></div>
+              <div class="byuje-2">Срок: 20 июня 2021 года</div>
 
+          </div>
+          <div class="byuje">
+              <div class="hatk">
+                  Просмотров (8)
+              </div>
+              <div class="hatk">
+                  Отклики (0)
+              </div>
+              <div class="hatk">
+                  Комментарии (1)
+              </div>
+          </div>
+          <div class="tmbtn">
+              <a class="outline df" href="#">
+                  Отметить как выполненное
+              </a>
+              <a class="outline df" href="#">
+                  Вы отметили это задание как выполненное
+              </a>
+              <a class="outline df" href="#">
+                  Отказаться от задания
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="showmore"><a href="#">Показать все объявления</a></div>
+  </div>
+  <div id="workvip">
+
+  <div class="zakaz">
+      Заказ №5617
+  </div>
+  <div class="analisis">
+      <div class="analisis-top">
+          <div class="tp-1">
+              <p class="gr">Опубликовано: 19 июня 2020</p>
+          </div>
+          <div class="tp-2 red">Статус: размещен на сайте</div>
+      </div>
+      <div class="analis-content">
+          <h3>Начертить курсовой проект</h3>
+          <p>
+              Начертить курсовой проект третьего курса МГТУ им. Н.Э. Баумана ещё какой-нибудь текст
+              что обычно пишут понятия не имею весной 1982 года я шёл по улице Ясеневой в городе
+              Пермь и наступил левым ботинком в лужу
+          </p>
+          <div class="byuje">
+              <div class="byuje-1">Бюджет: <span class="red">2000 руб.</span></div>
+              <div class="byuje-2">Срок: 20 июня 2021 года</div>
+
+          </div>
+          <div class="byuje">
+              <div class="hatk">
+                  Просмотров (8)
+              </div>
+              <div class="hatk">
+                  Отклики (0)
+              </div>
+              <div class="hatk">
+                  Комментарии (1)
+              </div>
+          </div>
+          <div class="revs-vip">
+              <div class="rateings">
+                  <div class="rate green">3.5</div>
+                  <a href="#" class="rt-link grn">5 оценок</a>
+              </div>
+              <p>Работы выполнена в срок, есть небольшие недочеты, но в целом доволен</p>
+          
+          </div>
+          <div class="edit-control">
+              <div class="btnset-group">
+                  <a href="javascript:void(0)"><img src="img/pen.png" alt=""></a>
+                  <a href="javascript:void(0)"><img src="img/trash.png" alt=""></a>
+            
+                </div>            
+              </div>
+      </div>
+  </div>
+  <div class="showmore"><a href="#">Показать все объявления</a></div>
+  </div>
+  <div id="workphoto">
+
+  <div class="analisis">
+    <div class="all-photos">
+      <div class="phtbox">
+        <p>Картинка 1</p>
+      </div>
+      <div class="phtbox">
+        <p>Картинка 1</p>
+      </div>
+      <div class="phtbox white">
+          <div class="icon"><img src="img/group_7.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="showmore"><a href="#">Показать все объявления</a></div>
+
+  </div>
 </div>
+<div id="myresponse-data">
+  <div class="top-resp">
+    <p>Задание №5617 / Дмитрий Иванов</p>
+    <div class="atr">
+        <p>Опубликовано: 20 мая 1968</p>
+        <p>Просмотров: 456</p>
+        <div><span><img src="img/like.png" alt="">2,4 МЛН</span>
+        <span class="red"><img src="img/dislike.png" alt="">23МЛН</span>
+        </div>
+    </div>
+</div>
+<div class="prods">
+    <h3>Выточить на токарно-винторезном станке винт</h3>
+    <div class="archive-product">
+      <div class="left-part">
+          <div class="top-task">
+              <p>Категории: 3D-услуги; 3Д-печать; Изготовление.</p>
+          </div>
+          <p>Изготовить лопатку. Изготовить лопатку. Изготовить лопатку. Изготовить лопатку.Изготовить лопатку.Изготовить лопатку.Изготовить лопатку.Изготовить лопатку...</p>
+          <div class="count">
+              <p>Количество:</p><span>7</span>
 
-<div class="analisis">
-  <div class="all-photos">
-    <div class="phtbox">
-      <p>Картинка 1</p>
-    </div>
-    <div class="phtbox">
-      <p>Картинка 1</p>
-    </div>
-    <div class="phtbox white">
-        <div class="icon"><img src="img/group_7.png" alt=""></div>
+          </div>
+          <h3><span>Бюджет:</span> <span class="red">100 руб.</span></h3>
+          <p>Срок выполнения: 20 июня 2021 года</p>
+          <p>Отзывы (0)</p>
+      </div>
+      
+      <div class="right-part">
+        
+          <a href="img/14.png" class="MagicZoom img-arch" data-options="hint:false; zoomMode:off;" id="mz-1462601028549">
+            <img src="img/14.png" alt="">
+          </a>
+  
+      </div>
+  </div>
+  <div class="my-resp">
+      <h4>Отклики на задание</h4>
+      <div class="select-box">
+          <select>
+              <option>Выполнено заказов</option>
+              <option>Выполнено заказов</option>
+              <option>Выполнено заказов</option>
+
+          </select>
+          <select>
+            <option>Успешных заказов</option>
+            <option>Выполнено заказов</option>
+            <option>Выполнено заказов</option>
+
+        </select>
+        <select>
+            <option>Выполнено в срок</option>
+            <option>Выполнено заказов</option>
+            <option>Выполнено заказов</option>
+
+        </select>
+        <select>
+          <option>Сортировать : По дате </option>
+          <option>20.04.2021</option>
+          <option>21.04.2021</option>
+
+      </select>
+      </div>
+  
+     <div class="res_ponse">
+       <div class="opresp">
+        <div class="name-resp">Отклик от Nagibator666 <span class="point"></span></div>
+        <div class="dataotk">Дата отклитка:21.01.20</div>
+       </div>
+        <div class="rsp-line">
+            <p>Выполнено: 30 заказов</p>
+            <p>Процент сданных заказов: 95%</p>
+            <p>Процент сданных в срок: 90%</p>
+
+        </div>
+        <div class="kpl">
+            <div class="rst-asd">
+                <div class="rst-img-box">
+                    <img src="img/image_9.png" alt="">
+                   
+                </div>
+                <div class="fd-text">
+                    <p>
+                        Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления.
+                    </p>
+                    <p>
+                        Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления. Готов сделать на условиях объявления.
+                    </p>
+                   
+                    <div class="fd">
+                        <h3><span>Бюджет:</span><span class="red"> 300 руб.</span></h3>
+                        <h3>Срок: 20 июня 2021 года</h3>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="lkdl">
+                <span><i class="fa fa-thumbs-up"></i>2.4MLN</span>
+                <span><i class="fa fa-thumbs-down"></i>2.4MLN</span>
+
+            </div>
+            <div class="score">Оценка: 4,5</div>
+        </div>
+        <div class="portfolio">
+            <h4>Портфолио</h4>
+            <div class="tui">Категория:  <span class="dy">все <img src="img/polygon_18.png" alt=""></span>
+       
+             </div>
+             <div class="portolio-box">
+                <div class="port">
+                    <img src="img/image_10.png" alt="">
+                </div>
+                <div class="port">
+                   <img src="img/image_11.png" alt="">
+               </div>
+               <div class="port">
+                   <img src="img/image_12.png" alt="">
+               </div>
+               <div class="port">
+                   <img src="img/image_13.png" alt="">
+               </div>
+               <div class="port">
+                   <a href="#">Посмотреть все ...</a>
+               </div>
+            </div>
+            <div class="port-but">
+                <a href="#" class="com_in">Связаться с исполнителем</a>
+            </div>
+        </div>
+        </div>
+     </div>
+  </div>
+</div>
+<div class="mailings-container" id="mailcontainer" >
+  <div class="mailing">
+    <h3>Мои рассылки</h3>
+    <ul class="mail-list">
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-1" class="regular-checkbox
+           big-checkbox"><label for="checkbox-1"></label>
+        </div>
+        <h5>Ответы на мои комментарии</h5>
+
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-2" class="regular-checkbox
+           big-checkbox" checked=""><label for="checkbox-2"></label>
+        </div>
+        <h5>Рекомендованные рассылки</h5>
+
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-3" class="regular-checkbox
+           big-checkbox" checked=""><label for="checkbox-3"></label>
+        </div>
+        <h5>Прочие уведомления</h5>
+
+      </li>
+      <li class="list-filter ml">
+        <div class="demo2">
+          <input type="checkbox" id="checkbox-4" class="regular-checkbox
+           big-checkbox"><label for="checkbox-4"></label>
+        </div>
+        <h5>Модерация отзывов</h5>
+
+      </li>
+    </ul>
+    <div class="popop">
+      <a href="#" class="outline" id="plc-order">Сохранить</a>
+      <a href="#" class="outline" id="cansle">Сбросить по умолчанию</a>
     </div>
   </div>
 </div>
+<div id="favorite-data">
+  <div class="zakaz">
+    Заказ №5617
+</div>
+<div class="analisis">
+    <div class="analisis-top">
+        <div class="tp-1">
+            <p>Автор: Катя Катерина</p>
+            <p>Опубликовано: 19 июня 2020</p>
+        </div>
+        <div class="tp-2">Статус: размещен на сайте</div>
+    </div>
+    <div class="analis-content">
+        <h3>Сделать прочностной расчет в среде ANSYS</h3>
+        <p>Быстрое развитие вычислительной техники и ее внедрение практически во все сферы
+            жизни привело к тому, что сегодня грамотный специалист в любой области знаний должен
+            хорошо ориентироваться в мире компьютеров и владеть необходимыми программными
+            средствами. Современный инженер не возможен без знания систем автоматического
+            проектирования (CAD – Computer Aids Design)
+        </p>
+        <div class="byuje">
+            <div class="byuje-1">Бюджет: 2000 руб.</div>
+            <div class="byuje-2">Срок: 20 июня 2021 года</div>
+
+        </div>
+        <div class="byuje">
+            <div class="hatk">
+                Просмотров (8)
+            </div>
+            <div class="hatk">
+                Отклики (0)
+            </div>
+            <div class="hatk">
+                Комментарии (1)
+            </div>
+        </div>
+        <div class="term">
+            <div class="hjl">
+                <p class="red">Отклик от Nagibator666</p>
+                <p>Готов сделать на условиях объявления</p>
+                <p>Бюджет: 2000 руб.</p>
+                <p>Срок: 20 июня 2021 года</p>
+            </div>
+            <div class="edit-crash">
+                <div class="btnset-group">
+                    <a href="javascript:void(0)"><img src="img/pen.png" alt=""></a>
+                    <a href="javascript:void(0)"><img src="img/trash.png" alt=""></a>
+              
+                  </div>            
+                </div>
+        </div>
+    </div>
+</div>
 <div class="showmore"><a href="#">Показать все объявления</a></div>
+</div>
+</div>
+
+
+
     <div class="footer">
         <div class="inner-footer">
             <div class="top-footer">
@@ -793,6 +1420,9 @@
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://api-maps.yandex.ru/2.1/?c12d79d2-bdb7-4b87-8d5d-5d82a9ffd9a2&lang=ru_Ru"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="js/script.js"></script>
+      
 </body>
 </html>
