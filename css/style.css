@@ -4633,7 +4633,7 @@ text-decoration: none;
         flex-direction: column;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 1000px){
     .portolio-box,.select-box,.rsp-line{
         flex-wrap: wrap;
     }
@@ -6082,6 +6082,10 @@ text-align: left;
 .looks-set{
     font-size: 18px;
 }
+.opresp{
+    flex-direction: column;
+    align-items: start;
+}
 }
 @media (max-width: 350px){
     .customer-search{
@@ -6122,4 +6126,11 @@ text-align: left;
     margin: 25px 0;
     display: block;
     text-decoration: none;
+}
+.cardbtn > .outline{
+    width: 125.48px;
+
+}
+.search-page{
+    margin-top: 160px;
 }
