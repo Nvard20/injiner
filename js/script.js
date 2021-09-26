@@ -18,24 +18,24 @@ $('.burger').click(function(){
 });
 
 
-if($(window).innerWidth() >= 1100) {
-    window.onscroll = function (){
-        if(window.pageYOffset >= 800 && window.pageYOffset<=2500){
-          $('.map-settings').addClass('fixid');
-          $('.main-container').addClass('other-container')
+// if($(window).innerWidth() >= 1100) {
+//     window.onscroll = function (){
+//         if(window.pageYOffset >= 800 && window.pageYOffset<=2500){
+//           $('.map-settings').addClass('fixid');
+//           $('.divmain').addClass('other-container')
     
-        }
-        else{
-          $('.map-settings').removeClass('fixid');
-          $('.main-container').removeClass('other-container')
+//         }
+//         else{
+//           $('.map-settings').removeClass('fixid');
+//           $('.divmain').removeClass('other-container')
 
-        }
-    }
-}else{
-    $('.map-settings').removeClass('fixid');
-    $('.main-container').css("justify-content", "center");
-    $('.main-container').css("margin-left", "0px");
-}
+//         }
+//     }
+// }else{
+//     $('.map-settings').removeClass('fixid');
+//     $('.divmain').removeClass('other-container')
+
+// }
 
 
 $('#register').click(function(){

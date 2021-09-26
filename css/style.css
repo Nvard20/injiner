@@ -1418,73 +1418,12 @@ margin-top: 66px;
     font-size: 15px;
 
 }
-@media (max-width:500px) {
-    #map{
-        margin: 15px 15px;
 
-    }
-}
 /* */
-.fixid{
-    position: fixed;
-    top: 115px;
-    right: 185px;
 
-    
-}
-@media (max-width: 1870px){
-    .fixid{
-        right: 125px;
 
-    }
-}
-@media (max-width: 1820px){
-    .fixid{
-        right: 50px;
-
-    }
-}
-@media (max-width: 1700px){
-    .fixid{
-        right: 170px;
-
-    }
-}
-@media (max-width: 1650px){
-    .fixid{
-        right: 100px;
-
-    }
-}
-@media (max-width: 1600px){
-    .fixid{
-        right: 130px;
-
-    }
-}
-@media (max-width: 1550px){
-    .fixid{
-        right: 40px !important;
-
-    }
-}
-@media (max-width: 1500px){
-    .fixid{
-        right: 10px !important;
-
-    }
-}
-@media (max-width: 1450px){
-    .fixid{
-        right: 70px !important;
-
-    }
-}
 @media (max-width: 1400px){
-    .fixid{
-        right: 20px !important;
-
-    }
+  
     .cm-img{
         margin-top: 2px;
 
@@ -1497,9 +1436,9 @@ margin-top: 66px;
     }
 }
 @media (max-width: 1130px){
-    .fixid {
+    /* .fixid {
         right: 20px !important;
-    }
+    } */
  
 }
 @media (max-width: 1200px){
@@ -1522,7 +1461,9 @@ margin-top: 66px;
         margin-top: 115px;
 
     }
-
+    .map-settings{
+        position: static !important;
+    }
     .container-injiner >h2 {
         
         margin-bottom: 20px;
@@ -1537,13 +1478,27 @@ margin-top: 66px;
         height: 300px !important;
     }
 }
-.other-container{
-    margin-left: 85px;
-    justify-content: start;
+.fixid{
+    position: fixed;
+    top: 115px;
+    right: 0px;
+
+    
 }
+.other-container{
+    /* margin-left: 85px;
+    justify-content: start; */
+    /* margin-left: -470px; */
+
+}
+
 .register-modal{
     margin-top: 33px;
 
+}
+.map-settings {
+    position: sticky;
+    top: 100px;
 }
 .w3-modal-content{
     border-radius: 2px !important;
@@ -6016,6 +5971,9 @@ text-align: left;
     .customer-search{
         padding: 10px;
 
+    }
+    .btn-link{
+        max-width: 235px;
     }
 }
 .tech-2{
