@@ -14,29 +14,19 @@ $('.burger').click(function(){
 
 
 
-    }
+}
 });
+$('.opnumb').click(function(){
+    $(this).hide();
+$(this).next('.allnumber').show();
+});
+$('.msg-close').click(function(){
+    $('.task').hide();
+});
+$('.otkl').click(function(){
+    $('.task').show();
 
-
-// if($(window).innerWidth() >= 1100) {
-//     window.onscroll = function (){
-//         if(window.pageYOffset >= 800 && window.pageYOffset<=2500){
-//           $('.map-settings').addClass('fixid');
-//           $('.divmain').addClass('other-container')
-    
-//         }
-//         else{
-//           $('.map-settings').removeClass('fixid');
-//           $('.divmain').removeClass('other-container')
-
-//         }
-//     }
-// }else{
-//     $('.map-settings').removeClass('fixid');
-//     $('.divmain').removeClass('other-container')
-
-// }
-
+});
 
 $('#register').click(function(){
     $('#id01').show();
