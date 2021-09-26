@@ -20,6 +20,13 @@ $('.opnumb').click(function(){
     $(this).hide();
 $(this).next('.allnumber').show();
 });
+$('.dt').click(function(){
+    $('.dt').removeClass('red ') ;
+    $(this).addClass('red');
+    $(this).find('img').removeClass('rotate');
+    $(this).find('img').addClass('rotate');
+
+});
 $('.msg-close').click(function(){
     $('.task').hide();
 });
@@ -104,7 +111,7 @@ $('#chg').click(function(){
     $('#mod-8').hide();
     $('#mod-9').show();
 
-})
+});
 $('.cat-box').click(function(){
     $(this).next().toggle(300);
     $(this).children('span').toggleClass('rotate')

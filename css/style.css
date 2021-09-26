@@ -655,6 +655,7 @@ font-weight: 400;
         -ms-flex-align: center;
             align-items: center;
     margin-right: 15px;
+    
 }
 .all_contacts{
     display: -webkit-box;
@@ -6044,6 +6045,17 @@ margin-bottom: 5px;
 }
 .task{
     display: none;
+}
+.dt{
+    margin-right: 15px;
+}
+.tools-rates > p{
+    margin-right: 15px;
+
+}
+.rotate{
+    transform: rotate(
+        180deg);
 }
 /* .x{
    
