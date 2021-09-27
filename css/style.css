@@ -4087,7 +4087,7 @@ display: flex;
 justify-content: space-between;
 }
 .prods{
-    max-width: 1640px;
+    max-width: 1600px;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
@@ -4369,7 +4369,7 @@ padding: 20px;
 }
 .top-resp{
     display: flex;
-    max-width: 1458px;
+    max-width: 1600px;
     justify-content: space-between;
     margin: 30px auto;
 }
@@ -4665,9 +4665,7 @@ cursor: pointer;
     
     }
 @media (max-width: 450px){
-    /* #painter canvas {
-        max-width: 295px !important;
-    } */
+  
     div#sidebar {
         flex-wrap: wrap;
         width: 95%;
@@ -4679,7 +4677,7 @@ cursor: pointer;
     }
 }
 .mailings-container{
-    max-width: 1200px ;
+    max-width: 1600px;
     margin: auto;
     border-radius: 5px;
 background: #fff;
@@ -4742,12 +4740,12 @@ font-weight: normal;
 font-size: 18px;
 text-align: left;
 color: #e50019;
-max-width: 1465px;
+max-width: 1600px;
 margin: 20px auto;
 
 }
 .analisis{
-    max-width: 1465px;
+    max-width: 1600px;
 background: #fff;
 filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
 padding: 20px;
@@ -5523,13 +5521,13 @@ margin: auto;
     text-align: left;
     color: #000;
     opacity: 0.54;
-    padding: 8px 10px;
+    padding: 5px 10px;
     margin-bottom: 10px;
     border: 2px solid transparent;
 }
 .item-plus{
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 .form-item > textarea{
     width: 100%;
@@ -5623,7 +5621,7 @@ line-height: 58px;
 text-align: left;
 
 }
-.chat-img > p{
+.chat-img > a{
     font-size: 12px;
     color: #e50019;
     text-decoration: underline;
@@ -6137,4 +6135,10 @@ overflow: hidden;
 
 .RearangeBox:hover > .imgRemoveBtn{ 
 display: block;
+}
+.plus{
+    cursor: pointer;
+    border: none;
+    width: 32px;
+    height: 32px;
 }
