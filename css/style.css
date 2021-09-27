@@ -1485,15 +1485,10 @@ margin-top: 66px;
 
     
 }
-.other-container{
-    /* margin-left: 85px;
-    justify-content: start; */
-    /* margin-left: -470px; */
 
-}
 
 .register-modal{
-    margin-top: 33px;
+    margin-top: 85px;
 
 }
 .map-settings {
@@ -1749,6 +1744,8 @@ align-items: center;
     display: none;
 }#mod-6{
     display: none;
+    margin-top: -37px;
+
 }
 #mod-7{
     display: none;
@@ -1893,7 +1890,7 @@ margin-top: 20px;
     }
 }
 #id02,#id03,#id04,#id05,#id06{
-    margin-top: 35px;
+    margin-top: 85px;
 
 }
 #log-2{
