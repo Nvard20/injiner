@@ -181,7 +181,7 @@
       <div class="left-aside">
           <div class="serv-category">
               <p>Выберите категорию услуги <span class="star">*</span></p>
-              <div class="cat-box">
+              <div class="cat-box catdrop">
                   <p>Инженерная документация</p>
                   <span><img src="img/down.png" alt=""></span>
               </div>
@@ -194,7 +194,7 @@
           </div>
           <div class="serv-category">
               <p>Выберите  услуги <span class="star">*</span></p>
-              <div class="cat-box">
+              <div class="cat-box catdrop">
                   <p>Спроектировать чертеж</p>
                   <span><img src="img/down.png" alt=""></span>
               </div>
@@ -310,7 +310,7 @@
               <div class="cat-box">
                   <p id='val'>D://image.png</p>
                   <div class="fl">
-                      <input type='file' > <span id='val'></span>
+                    <input id="files" type="file" multiple/>         <span id='val'></span>
                       <div id='button'><img src="img/file.png" alt=""></div>
             
                 </div>
@@ -323,7 +323,12 @@
             <div class="serv-category">
               <p>Загруженные файлы:</p>
               <div class="file-all">
-                <div class="file-box">
+                <div style='padding:14px; margin:auto';>
+                  <div id="sortableImgThumbnailPreview">
+                        
+                    </div>
+                  </div>
+                <!-- <div class="file-box">
                   <div class="png">
                     <div class="png-item">
                       png
@@ -349,9 +354,8 @@
                   </div>
                   <p>Файл 1
                     размер 5,3 мб</p>
-                </div>
+                </div> -->
               </div>
-              <div class="size">Вы превысили допустимый размер файлов на 4,2 мб</div>
             </div>
           </div>
           <div class="btnsg">
@@ -362,14 +366,14 @@
             <div class="serv-category">
               <p>Прикрепить файл </p>
               <div class="cat-box">
-                  <p id='val'>D://image.png</p>
-                  <div class="fl">
-                      <input type='file' multiple class="fl-input"> <span id='val'></span>
-                      <div id='button'><img src="img/file.png" alt=""></div>
-            
-                </div>
-       
+                <p id="val2">D://image.png</p>
+                <div class="fl">
+                    <input type="file"> <span id="val2"></span>
+                    <div id="butt"><img src="img/file.png" alt=""></div>
+          
               </div>
+     
+            </div>
               <p class="format">*файл не должен превышать 30Мб
                 Поддерживаемые форматы: .stp, .step, .stl, .obj,  .zip, .rar, .doc, .docx, .xls, .xlsx, .pdf, .dwg, .dxf,
                  .png, .bmp, .gif, .jpg, .svg</p>

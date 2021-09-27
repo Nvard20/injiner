@@ -117,10 +117,19 @@ $('#chg').click(function(){
     $('#mod-9').show();
 
 });
-$('.cat-box').click(function(){
+$('.catdrop').click(function(){
     $(this).next().toggle(300);
     $(this).children('span').toggleClass('rotate')
 });
+$('#butt').click(function () {
+    $("input[type='file']").trigger('click');
+});
+
+$("input[type='file']").change(function () {
+    $('#val2').text(this.value.replace(/C:\\fakepath\\/i, ''))
+})
+
+;
 $('#button').click(function () {
     $("input[type='file']").trigger('click');
 });
@@ -230,20 +239,16 @@ $('#custperform').click(function(){
     $('#work-container').hide();
 
     $('#chat-data').hide();
-//     $('#myorder-data').hide();
  $('#myresponse-data').hide();
-// $('#mailcontainer').hide();
-// $('#favorite-data').show();
+
 });
 $('#mywork').click(function(){
     $('#perf-done').hide();
 
     $('#chat-data').hide();
     $('#work-container').show();
-//     $('#myorder-data').hide();
  $('#myresponse-data').hide();
-// $('#mailcontainer').hide();
-// $('#favorite-data').show();
+
 });
 $('#ordertek').click(function(){
     $('.tech-2').hide();
@@ -271,7 +276,65 @@ $('#myorder').click(function(){
     $('.tech-1').hide();
     $('.tech-2').show();
 
-})
+});
+$(function() {
+    $("#sortableImgThumbnailPreview").sortable({
+     connectWith: ".RearangeBox",
+    
+        
+      start: function( event, ui ) { 
+           $(ui.item).addClass("dragElemThumbnail");
+           ui.placeholder.height(ui.item.height());
+   
+       },
+        stop:function( event, ui ) { 
+           $(ui.item).removeClass("dragElemThumbnail");
+       }
+    });
+    $("#sortableImgThumbnailPreview").disableSelection();
+});
+
+
+
+
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+function handleFileSelect(evt) {
+
+var files = evt.target.files; 
+var output = document.getElementById("sortableImgThumbnailPreview");
+
+// Loop through the FileList and render image files as thumbnails.
+for (var i = 0, f; f = files[i]; i++) {
+
+// Only process image files.
+if (!f.type.match('image.*')) {
+continue;
+}
+
+var reader = new FileReader();
+
+// Closure to capture the file information.
+reader.onload = (function(theFile) {
+return function(e) {
+  // Render thumbnail.
+   var imgThumbnailElem = "<div class='RearangeBox imgThumbContainer'><i class='material-icons imgRemoveBtn' onclick='removeThumbnailIMG(this)'>X</i><div class='IMGthumbnail' ><img  src='" + e.target.result + "'" + "title='"+ theFile.name + "'/></div><div class='imgName'>"+ theFile.name +"</div></div>";
+            
+            output.innerHTML = output.innerHTML + imgThumbnailElem; 
+  
+};
+})(f);
+
+// Read in the image file as a data URL.
+reader.readAsDataURL(f);
+}
+}
+
+function removeThumbnailIMG(elm){
+elm.parentNode.outerHTML='';
+}
+
+
 var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters
     direction: 'horizontal',
