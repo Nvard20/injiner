@@ -16,17 +16,22 @@ $('.burger').click(function(){
 
 }
 });
+
 $('.opnumb').click(function(){
     $(this).hide();
 $(this).next('.allnumber').show();
 });
+
 $('.dt').click(function(){
     $('.dt').removeClass('red ') ;
+    $('.dt').find('img').removeClass('rotate');
+
     $(this).addClass('red');
-    $(this).find('img').removeClass('rotate');
     $(this).find('img').addClass('rotate');
 
 });
+
+
 $('.msg-close').click(function(){
     $('.task').hide();
 });

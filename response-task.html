@@ -365,7 +365,7 @@
             
             <div class="map-aside">
             
-              <div id="map" style="height: 100%;"></div>
+              <div id="map-card-2" style="height: 100%;"></div>
             
             </div>
 
@@ -943,27 +943,20 @@ function init_map(cords){
      
     
       
-     var myMap = new ymaps.Map('map', {
+     var myMap = new ymaps.Map('map-card-2', {
             center: cords,
             zoom: 7,
             controls: [],
           }, {
             suppressMapOpenBlock: true
           }),  
-      
-          
-          
-          
-          
-         
-  
           // Создание макета балуна на основе Twitter Bootstrap.
           MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
               '<div class="popover top">' +
               '<a class="close" href="#">&times;</a>' +
               '<div class="arrow"></div>' +
               '<div class="popover-inner">' +
-    //          '$[[options.contentLayout observeSize minWidth=400 maxWidth=400 maxHeight=350]]' +
+    //      '$[[options.contentLayout observeSize minWidth=400 maxWidth=400 maxHeight=350]]' +
               '</div>' +
               '</div>', {
                 /**
