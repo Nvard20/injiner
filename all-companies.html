@@ -208,7 +208,7 @@
                 </div>
                 <div class="tools-rates">
                     <p>Сортировать по:</p>
-                    <div class="raiting">
+                    <div class="dt">
                         <span>Рейтингу</span>
                         <img src="img/path_218.png" alt="">
                     </div>
@@ -440,7 +440,7 @@
             
             <div class="map-aside">
             
-              <div id="map" style="height: 100%;"></div>
+              <div id="map-all" style="height: 100%;"></div>
             
             </div>
 
@@ -1004,20 +1004,13 @@ function init_map(cords){
      
     
       
-     var myMap = new ymaps.Map('map', {
+     var myMap = new ymaps.Map('map-all', {
             center: cords,
             zoom: 7,
             controls: [],
           }, {
             suppressMapOpenBlock: true
           }),  
-      
-          
-          
-          
-          
-         
-  
           // Создание макета балуна на основе Twitter Bootstrap.
           MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
               '<div class="popover top">' +
