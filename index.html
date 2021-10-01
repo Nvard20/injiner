@@ -123,13 +123,14 @@
                        </div>
                     <div>
                         <a href="response-task.html" class="hover-1">Найти задания</a>
-                        </div>
+                    </div>
                     <div>
                         <a href="register-company.html" class="hover-1">Добавить компанию</a>
                     </div>
                     <div><a href="all-companies.html" class="hover-1">
                         Все компании
-                    </a></div>
+                       </a>
+                    </div>
                 </div>
             </nav>
             <div class="account-settings">
@@ -137,7 +138,11 @@
                     <a href="#" class="reg" id='login'>Вход</a>
                     <a href="#" class="reg" id='register'>Регистрация</a>
                 </div>
-                <p>Ваш регион: Новый Уренгой и ЯНАО</p>
+              <div class="regions-block">Ваш регион: <a class="current-region">Новый Уренгой и ЯНАО</a>
+                <div class="dropdown-menu">
+                     <ul><li><a class="search-items">Алтайский край</a></li><li><a class="search-items">Амурская область</a></li><li><a class="search-items">Архангельская область</a></li><li><a class="search-items">Астраханская область</a></li><li><a class="search-items">Республика Адыгея</a></li><li><a class="search-items">Республика Алтай</a></li><li><a class="search-items">Республика Северная Осетия — Алания</a></li></ul>
+                  </div>
+              </div>
             </div>
             <div class="mobile-nav">
                 <div class="burger">
@@ -164,9 +169,13 @@
                     <a href="#" class="reg">Вход</a>
                     <a href="#" class="reg">Регистрация</a>
                 </div>
-                <p>Ваш регион: Новый Уренгой и ЯНАО</p>         
+                <div class="regions-block">Ваш регион: <a class="current-region">Новый Уренгой и ЯНАО</a>
+                <div class="dropdown-menu">
+                     <ul><li><a class="search-items">Алтайский край</a></li><li><a class="search-items">Амурская область</a></li><li><a class="search-items">Архангельская область</a></li><li><a class="search-items">Астраханская область</a></li><li><a class="search-items">Республика Адыгея</a></li><li><a class="search-items">Республика Алтай</a></li><li><a class="search-items">Республика Северная Осетия — Алания</a></li></ul>
+                  </div>
+                </div>         
               </div>
-           
+           </div>
         </div>
     </header>
     <div class="main-baner">
@@ -1090,11 +1099,11 @@ function init_map(cords){
           }),  
           // Создание макета балуна на основе Twitter Bootstrap.
           MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
-              '<div class="popover top">' +
+              '<div class="popover top edited">' +
               '<a class="close" href="#">&times;</a>' +
               '<div class="arrow"></div>' +
               '<div class="popover-inner">' +
-    //          '$[[options.contentLayout observeSize minWidth=400 maxWidth=400 maxHeight=350]]' +
+              '$[[options.contentLayout observeSize minWidth=100% maxWidth=100% maxHeight=350]]' +
               '</div>' +
               '</div>', {
                 /**
@@ -1103,6 +1112,9 @@ function init_map(cords){
                  * @function
                  * @name build
                  */
+                 
+                 
+                 
                 build: function () {
                   this.constructor.superclass.build.call(this);
   
@@ -1112,6 +1124,7 @@ function init_map(cords){
   
                   this._$element.find('.close')
                       .on('click', $.proxy(this.onCloseClick, this));
+                 
                 },
   
                 /**
@@ -1143,6 +1156,7 @@ function init_map(cords){
                   this.applyElementOffset();
   
                   this.events.fire('shapechange');
+                  
                 },
   
                 /**
@@ -17363,7 +17377,10 @@ function init_map(cords){
             balloonPanelMaxMapArea: 0
           });
           
-          
+        
+        
+        
+        
         var zoomControl = new ymaps.control.ZoomControl({
     options: {
         size: "medium",
@@ -17374,7 +17391,10 @@ function init_map(cords){
         
     }
 });  
-          
+     
+     
+     
+     
           myMap.controls.add(zoomControl);
           
           
@@ -17532,10 +17552,10 @@ myMap.controls.add(geolocationControl);
 }
 
 init_map([55.751574, 37.573856]);
-      
+
  </script>
 
-
+<script src="js/drop.js"></script>
 
 </body>
 </html> 

@@ -1410,7 +1410,7 @@ margin-top: 66px;
 
 .popover-content{
     font-size: 15px;
-    padding-left: 11px;
+    padding-left: 0px;
     color: gray;
     font-weight: bold;
 }
@@ -6144,4 +6144,40 @@ display: block;
 }
 .kash{
     display: none !important;
+}
+.dropdown-menu{
+    position: absolute;
+    background: lightgray;
+    padding: 15px;
+    top: 41px;
+    right: 0px;
+    display: none;
+}
+.dropdown-menu.show{
+display: block;
+}
+.regions-block {
+    position: relative;
+    color: white !important;
+}
+.dropdown-menu ul li a{
+color: black !important;
+}
+.popover-inner ymaps {
+    width: 100%;
+    min-width: 100%;
+    max-width: none !important;
+    text-align: center;
+    height: auto !important;
+}
+.regions-block{
+    max-width: 290px;
+    margin: auto;
+
+}
+.dropdown-menu > ul > li > a{
+    cursor: pointer;
+}
+.current-region{
+    cursor: pointer;
 }

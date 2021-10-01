@@ -333,8 +333,11 @@ reader.readAsDataURL(f);
 function removeThumbnailIMG(elm){
 elm.parentNode.outerHTML='';
 }
+///drop header
 
 
+
+///
 var mySwiper = new Swiper ('.mySwiper', {
     // Optional parameters
     direction: 'horizontal',
