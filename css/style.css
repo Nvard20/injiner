@@ -1267,8 +1267,7 @@ margin-top: 66px;
 }
 @media (max-width: 1600px){
     .footer-menu > li > a ,.bottom-footer > p ,.bottom-footer > div,.soc > span{
-        font-size: 28px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     }
@@ -2251,36 +2250,7 @@ input[type=number]::-webkit-inner-spin-button {
     position: relative;
   }
   
-  .number-wrapper:after,
-  .number-wrapper:before {
-    position: absolute;
-    right: 6px;
-    width: 2.6em;
-    height: 1.9em;
-    font-size: 10px;
-    pointer-events: none;
-    background: #fff;
-    z-index: 1;
-  }
   
-  .number-wrapper:after {
-    content: "\25B2";
-    margin-top: 1px;
-    background-color:#e50019;
-    color: white;
-    text-align: center;
-
-  }
-  
-  .number-wrapper:before {
-    color: white;
-    content: "\25BC";
-    background-color:#e50019;
-    margin-bottom: 5px;
-    bottom: -1.5em;
-    text-align: center;
-
-  }
   input[type="date"]{
     width: 100%;
 }
@@ -3128,7 +3098,7 @@ position: relative;
   .list-filter > h5 {
     font-family: Arial;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
     text-align: left;
     color: #000;
@@ -3504,6 +3474,7 @@ color: #000;
  }
  .faq-page{
     margin-top: 45px;
+    border-radius: 12px;
 
  }
  .chat-container{
@@ -4413,6 +4384,9 @@ text-align: center;
 color: #000;
 margin-bottom: 20px;
 }
+.my-resp{
+    margin-top: 20px;
+}
 .my-resp > h4 {
     font-family: "Segoe UI";
 font-weight: normal;
@@ -4474,7 +4448,7 @@ padding: 20px;
 display: none;
 }
 .res_ponse{
-    max-width: 1206px;
+    max-width: 1320px;
 background: #fff;
 filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.16));
 margin: auto;
@@ -5268,6 +5242,8 @@ background: #fff;
 filter: drop-shadow(2px 4px 15px rgba(0, 0, 0, 0.16));
 margin: auto;
 padding: 20px;
+margin-top: 20px;
+display: none;
 }
 .head-title-card{
     position: relative;
@@ -5375,6 +5351,7 @@ box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.16);
 position: relative;
 padding: 20px;
 margin-top: 20px;
+display: none;
 }
 .compile-task > h3{
     font-family: Arial;
@@ -5579,6 +5556,8 @@ margin: auto;
 margin-top: 162px;
 position: relative;
 padding: 50px;
+margin-bottom: 55px;
+
 }
 .politics-container > p{
     font-family: "Segoe UI";
@@ -5596,7 +5575,9 @@ box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.16);
 margin: auto;
 padding: 30px;
 margin-top: 160px;
-
+margin-bottom: 40px;
+margin-left: 15px;
+margin-right: 15px;
 }
 .faqcontent{
     max-width: 1000px;
@@ -5795,9 +5776,9 @@ color: #3471e6;
 border-radius: 5px;
 background: #fff;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
-padding: 40px;
+padding: 4px;
 margin: auto;
-margin-top: 160px;
+margin-top: 40px;
 }
 .active-div{
     margin-right: 20px;
@@ -5806,10 +5787,10 @@ margin-top: 160px;
 }
 .curr{
     justify-content: start;
+    padding: 0 30px;
 
 }
 .searchbox-items{
-    max-width: 1364px;
 border-radius: 5px;
 background: #fff;
 box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
@@ -6141,6 +6122,14 @@ display: block;
     border: none;
     width: 32px;
     height: 32px;
+    background: #e10019;
+    border-radius: 5px;
+
+}
+
+.plus > img{
+    margin: auto;
+    display: block;
 }
 .kash{
     display: none !important;
@@ -6171,13 +6160,60 @@ color: black !important;
     height: auto !important;
 }
 .regions-block{
-    max-width: 290px;
+    max-width: 210px;
     margin: auto;
+    display: flex;
+    align-items: baseline;
 
+}
+.cur{
+    white-space: nowrap;
 }
 .dropdown-menu > ul > li > a{
     cursor: pointer;
 }
 .current-region{
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+
+}
+#crMz819596366702{
+    display: none !important;
+}
+.sub_close{
+    top: 20px;
+
+}
+.btnperfs{
+    display: flex;
+    justify-content: space-between;
+}
+.uts{
+    width: 275.48px;
+margin: 20px 0;
+} 
+@media (max-width: 767px){
+    .btnperfs{
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px){
+    .uts{
+        width: 200px;
+    }
+}
+#msg-content{
+    display: none;
+}
+#rev-content{
+    display: none;
+
+}
+.maket-container > p{
     cursor: pointer;
 }

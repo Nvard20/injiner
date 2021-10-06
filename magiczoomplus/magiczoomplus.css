@@ -81,6 +81,7 @@ figure.mz-figure {
 .mz-expand .mz-figure.mz-no-zoom {
     cursor: default !important;
 }
+
 .mz-figure.mz-active,
 .mz-expand {
     -ms-touch-action: none;
@@ -1437,4 +1438,9 @@ a[data-zoom-id] img,
 .magic-thumbs-button-disabled {
     opacity: 0.2;
     filter: alpha(opacity = 20);
+}
+html body .mz-expand > span{
+
+    display: none !important;
+    color: transparent !important;
 }

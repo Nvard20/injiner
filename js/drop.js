@@ -19,3 +19,4 @@ drop_item.forEach(function(key, value){
       key.parentNode.parentNode.parentNode.parentNode.querySelector('.dropdown-menu').classList.remove('show');
     }
 })
+////
