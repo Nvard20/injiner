@@ -1191,21 +1191,21 @@ font-family: "Arial";
     list-style: none;
 }
 .footer-menu > li > a{
-    font-size: 20px;
+    font-size: 18px;
 line-height: 40px;
 text-decoration: underline;
 color: #ffffff;
 font-family: "Arial";
 }
 .bottom-footer > p{
-    font-size: 28px;
+    font-size: 18px;
     line-height: 40px;
     text-decoration: underline;
     color: #ffffff;
     font-family: "Arial";
 }
 .bottom-footer > div{
-    font-size: 28px;
+    font-size: 18px;
     line-height: 40px;
     color: #ffffff;
     font-family: "Arial";
